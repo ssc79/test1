@@ -1,0 +1,270 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c15831760' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c15831760",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(10,14]": "#F7FBFF",
+"(14,18]": "#DEEBF7",
+"(18,24]": "#C6DBEF",
+"(24,25]": "#9ECAE1",
+"(25,34]": "#6BAED6",
+"(34,44]": "#4292C6",
+"(44,51]": "#2171B5",
+"(51,77]": "#08519C",
+"(77,251]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "3001": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3001 ],
+"gdenamk": [ "Herisau" ],
+"anz_r": [ 251 ],
+"id": [ "3001" ],
+"fillKey": [ "(77,251]" ] 
+},
+"3002": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3002 ],
+"gdenamk": [ "Hundwil" ],
+"anz_r": [ 26 ],
+"id": [ "3002" ],
+"fillKey": [ "(25,34]" ] 
+},
+"3003": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3003 ],
+"gdenamk": [ "Schoenengrund" ],
+"anz_r": [ 24 ],
+"id": [ "3003" ],
+"fillKey": [ "(18,24]" ] 
+},
+"3004": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3004 ],
+"gdenamk": [ "Schwellbrunn" ],
+"anz_r": [ 18 ],
+"id": [ "3004" ],
+"fillKey": [ "(14,18]" ] 
+},
+"3005": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3005 ],
+"gdenamk": [ "Stein (AR)" ],
+"anz_r": [ 15 ],
+"id": [ "3005" ],
+"fillKey": [ "(14,18]" ] 
+},
+"3007": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3007 ],
+"gdenamk": [ "Waldstatt" ],
+"anz_r": [ 25 ],
+"id": [ "3007" ],
+"fillKey": [ "(24,25]" ] 
+},
+"3021": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3021 ],
+"gdenamk": [ "Buehler" ],
+"anz_r": [ 43 ],
+"id": [ "3021" ],
+"fillKey": [ "(34,44]" ] 
+},
+"3022": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3022 ],
+"gdenamk": [ "Gais" ],
+"anz_r": [ 51 ],
+"id": [ "3022" ],
+"fillKey": [ "(51,77]" ] 
+},
+"3023": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3023 ],
+"gdenamk": [ "Speicher" ],
+"anz_r": [ 77 ],
+"id": [ "3023" ],
+"fillKey": [ "(51,77]" ] 
+},
+"3024": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3024 ],
+"gdenamk": [ "Teufen (AR)" ],
+"anz_r": [ 133 ],
+"id": [ "3024" ],
+"fillKey": [ "(77,251]" ] 
+},
+"3025": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3025 ],
+"gdenamk": [ "Trogen" ],
+"anz_r": [ 46 ],
+"id": [ "3025" ],
+"fillKey": [ "(44,51]" ] 
+},
+"3031": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3031 ],
+"gdenamk": [ "Grub (AR)" ],
+"anz_r": [ 21 ],
+"id": [ "3031" ],
+"fillKey": [ "(18,24]" ] 
+},
+"3032": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3032 ],
+"gdenamk": [ "Heiden" ],
+"anz_r": [ 71 ],
+"id": [ "3032" ],
+"fillKey": [ "(51,77]" ] 
+},
+"3033": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3033 ],
+"gdenamk": [ "Lutzenberg" ],
+"anz_r": [ 12 ],
+"id": [ "3033" ],
+"fillKey": [ "(10,14]" ] 
+},
+"3034": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3034 ],
+"gdenamk": [ "Rehetobel" ],
+"anz_r": [ 44 ],
+"id": [ "3034" ],
+"fillKey": [ "(34,44]" ] 
+},
+"3035": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3035 ],
+"gdenamk": [ "Reute (AR)" ],
+"anz_r": [ 14 ],
+"id": [ "3035" ],
+"fillKey": [ "(10,14]" ] 
+},
+"3036": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3036 ],
+"gdenamk": [ "Wald (AR)" ],
+"anz_r": [ 10 ],
+"id": [ "3036" ],
+"fillKey": [ null ] 
+},
+"3037": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3037 ],
+"gdenamk": [ "Walzenhausen" ],
+"anz_r": [ 24 ],
+"id": [ "3037" ],
+"fillKey": [ "(18,24]" ] 
+},
+"3038": {
+ "ktkz": [ "ar" ],
+"gdenr": [ 3038 ],
+"gdenamk": [ "Wolfhalden" ],
+"anz_r": [ 34 ],
+"id": [ "3038" ],
+"fillKey": [ "(25,34]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/ar-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'index.html';});
+                   } ,
+"id": "chart470c15831760" 
+}
+  chartParams.element = document.getElementById('chart470c15831760')
+  
+  
+  var mapchart470c15831760 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c15831760.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c15831760.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c15831760.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

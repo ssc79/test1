@@ -1,0 +1,702 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c590d7d66' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c590d7d66",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(6,19]": "#F7FBFF",
+"(19,42]": "#DEEBF7",
+"(42,62]": "#C6DBEF",
+"(62,76]": "#9ECAE1",
+"(76,100]": "#6BAED6",
+"(100,118]": "#4292C6",
+"(118,154]": "#2171B5",
+"(154,207]": "#08519C",
+"(207,848]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "3201": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3201 ],
+"gdenamk": [ "Haeggenschwil" ],
+"anz_r": [ 9 ],
+"id": [ "3201" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3202": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3202 ],
+"gdenamk": [ "Muolen" ],
+"anz_r": [ 6 ],
+"id": [ "3202" ],
+"fillKey": [ null ] 
+},
+"3203": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3203 ],
+"gdenamk": [ "St. Gallen" ],
+"anz_r": [ 848 ],
+"id": [ "3203" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3204": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3204 ],
+"gdenamk": [ "Wittenbach" ],
+"anz_r": [ 170 ],
+"id": [ "3204" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3211": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3211 ],
+"gdenamk": [ "Berg (SG)" ],
+"anz_r": [ 11 ],
+"id": [ "3211" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3212": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3212 ],
+"gdenamk": [ "Eggersriet" ],
+"anz_r": [ 61 ],
+"id": [ "3212" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3213": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3213 ],
+"gdenamk": [ "Goldach" ],
+"anz_r": [ 133 ],
+"id": [ "3213" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3214": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3214 ],
+"gdenamk": [ "Moerschwil" ],
+"anz_r": [ 41 ],
+"id": [ "3214" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3215": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3215 ],
+"gdenamk": [ "Rorschach" ],
+"anz_r": [ 151 ],
+"id": [ "3215" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3216": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3216 ],
+"gdenamk": [ "Rorschacherberg" ],
+"anz_r": [ 109 ],
+"id": [ "3216" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3217": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3217 ],
+"gdenamk": [ "Steinach" ],
+"anz_r": [ 71 ],
+"id": [ "3217" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3218": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3218 ],
+"gdenamk": [ "Tuebach" ],
+"anz_r": [ 19 ],
+"id": [ "3218" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3219": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3219 ],
+"gdenamk": [ "Untereggen" ],
+"anz_r": [ 13 ],
+"id": [ "3219" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3231": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3231 ],
+"gdenamk": [ "Au (SG)" ],
+"anz_r": [ 100 ],
+"id": [ "3231" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3232": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3232 ],
+"gdenamk": [ "Balgach" ],
+"anz_r": [ 30 ],
+"id": [ "3232" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3234": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3234 ],
+"gdenamk": [ "Diepoldsau" ],
+"anz_r": [ 107 ],
+"id": [ "3234" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3235": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3235 ],
+"gdenamk": [ "Rheineck" ],
+"anz_r": [ 75 ],
+"id": [ "3235" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3236": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3236 ],
+"gdenamk": [ "St. Margrethen" ],
+"anz_r": [ 80 ],
+"id": [ "3236" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3237": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3237 ],
+"gdenamk": [ "Thal" ],
+"anz_r": [ 104 ],
+"id": [ "3237" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3238": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3238 ],
+"gdenamk": [ "Widnau" ],
+"anz_r": [ 66 ],
+"id": [ "3238" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3251": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3251 ],
+"gdenamk": [ "Altstaetten" ],
+"anz_r": [ 186 ],
+"id": [ "3251" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3252": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3252 ],
+"gdenamk": [ "Eichberg" ],
+"anz_r": [ 13 ],
+"id": [ "3252" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3253": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3253 ],
+"gdenamk": [ "Marbach (SG)" ],
+"anz_r": [ 26 ],
+"id": [ "3253" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3254": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3254 ],
+"gdenamk": [ "Oberriet (SG)" ],
+"anz_r": [ 84 ],
+"id": [ "3254" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3255": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3255 ],
+"gdenamk": [ "Rebstein" ],
+"anz_r": [ 49 ],
+"id": [ "3255" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3256": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3256 ],
+"gdenamk": [ "Ruethi (SG)" ],
+"anz_r": [ 47 ],
+"id": [ "3256" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3271": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3271 ],
+"gdenamk": [ "Buchs (SG)" ],
+"anz_r": [ 237 ],
+"id": [ "3271" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3272": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3272 ],
+"gdenamk": [ "Gams" ],
+"anz_r": [ 65 ],
+"id": [ "3272" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3273": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3273 ],
+"gdenamk": [ "Grabs" ],
+"anz_r": [ 116 ],
+"id": [ "3273" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3274": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3274 ],
+"gdenamk": [ "Sennwald" ],
+"anz_r": [ 111 ],
+"id": [ "3274" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3275": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3275 ],
+"gdenamk": [ "Sevelen" ],
+"anz_r": [ 80 ],
+"id": [ "3275" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3276": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3276 ],
+"gdenamk": [ "Wartau" ],
+"anz_r": [ 77 ],
+"id": [ "3276" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3291": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3291 ],
+"gdenamk": [ "Bad Ragaz" ],
+"anz_r": [ 111 ],
+"id": [ "3291" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3292": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3292 ],
+"gdenamk": [ "Flums" ],
+"anz_r": [ 173 ],
+"id": [ "3292" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3293": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3293 ],
+"gdenamk": [ "Mels" ],
+"anz_r": [ 118 ],
+"id": [ "3293" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3294": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3294 ],
+"gdenamk": [ "Pfaefers" ],
+"anz_r": [ 19 ],
+"id": [ "3294" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3295": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3295 ],
+"gdenamk": [ "Quarten" ],
+"anz_r": [ 76 ],
+"id": [ "3295" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3296": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3296 ],
+"gdenamk": [ "Sargans" ],
+"anz_r": [ 120 ],
+"id": [ "3296" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3297": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3297 ],
+"gdenamk": [ "Vilters-Wangs" ],
+"anz_r": [ 62 ],
+"id": [ "3297" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3298": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3298 ],
+"gdenamk": [ "Walenstadt" ],
+"anz_r": [ 220 ],
+"id": [ "3298" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3311": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3311 ],
+"gdenamk": [ "Amden" ],
+"anz_r": [ 111 ],
+"id": [ "3311" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3312": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3312 ],
+"gdenamk": [ "Benken (SG)" ],
+"anz_r": [ 41 ],
+"id": [ "3312" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3313": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3313 ],
+"gdenamk": [ "Kaltbrunn" ],
+"anz_r": [ 60 ],
+"id": [ "3313" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3315": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3315 ],
+"gdenamk": [ "Schaenis" ],
+"anz_r": [ 43 ],
+"id": [ "3315" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3338": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3338 ],
+"gdenamk": [ "Schmerikon" ],
+"anz_r": [ 62 ],
+"id": [ "3338" ],
+"fillKey": [ "(42,62]" ] 
+},
+"3340": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3340 ],
+"gdenamk": [ "Rapperswil-Jona" ],
+"anz_r": [ 399 ],
+"id": [ "3340" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3341": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3341 ],
+"gdenamk": [ "Gommiswald" ],
+"anz_r": [ 207 ],
+"id": [ "3341" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3342": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3342 ],
+"gdenamk": [ "Eschenbach (SG)" ],
+"anz_r": [ 129 ],
+"id": [ "3342" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3352": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3352 ],
+"gdenamk": [ "Ebnat-Kappel" ],
+"anz_r": [ 118 ],
+"id": [ "3352" ],
+"fillKey": [ "(100,118]" ] 
+},
+"3359": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3359 ],
+"gdenamk": [ "Wildhaus-Alt St. Johann" ],
+"anz_r": [ 85 ],
+"id": [ "3359" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3360": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3360 ],
+"gdenamk": [ "Nesslau" ],
+"anz_r": [ 72 ],
+"id": [ "3360" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3372": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3372 ],
+"gdenamk": [ "Hemberg" ],
+"anz_r": [ 18 ],
+"id": [ "3372" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3375": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3375 ],
+"gdenamk": [ "Oberhelfenschwil" ],
+"anz_r": [ 19 ],
+"id": [ "3375" ],
+"fillKey": [ "(6,19]" ] 
+},
+"3378": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3378 ],
+"gdenamk": [ "Neckertal" ],
+"anz_r": [ 70 ],
+"id": [ "3378" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3379": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3379 ],
+"gdenamk": [ "Wattwil" ],
+"anz_r": [ 262 ],
+"id": [ "3379" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3392": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3392 ],
+"gdenamk": [ "Kirchberg (SG)" ],
+"anz_r": [ 165 ],
+"id": [ "3392" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3393": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3393 ],
+"gdenamk": [ "Luetisburg" ],
+"anz_r": [ 42 ],
+"id": [ "3393" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3394": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3394 ],
+"gdenamk": [ "Mosnang" ],
+"anz_r": [ 175 ],
+"id": [ "3394" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3395": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3395 ],
+"gdenamk": [ "Buetschwil-Ganterschwil" ],
+"anz_r": [ 127 ],
+"id": [ "3395" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3401": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3401 ],
+"gdenamk": [ "Degersheim" ],
+"anz_r": [ 82 ],
+"id": [ "3401" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3402": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3402 ],
+"gdenamk": [ "Flawil" ],
+"anz_r": [ 209 ],
+"id": [ "3402" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3405": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3405 ],
+"gdenamk": [ "Jonschwil" ],
+"anz_r": [ 68 ],
+"id": [ "3405" ],
+"fillKey": [ "(62,76]" ] 
+},
+"3407": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3407 ],
+"gdenamk": [ "Oberuzwil" ],
+"anz_r": [ 199 ],
+"id": [ "3407" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3408": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3408 ],
+"gdenamk": [ "Uzwil" ],
+"anz_r": [ 168 ],
+"id": [ "3408" ],
+"fillKey": [ "(154,207]" ] 
+},
+"3422": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3422 ],
+"gdenamk": [ "Niederbueren" ],
+"anz_r": [ 25 ],
+"id": [ "3422" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3423": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3423 ],
+"gdenamk": [ "Niederhelfenschwil" ],
+"anz_r": [ 154 ],
+"id": [ "3423" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3424": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3424 ],
+"gdenamk": [ "Oberbueren" ],
+"anz_r": [ 88 ],
+"id": [ "3424" ],
+"fillKey": [ "(76,100]" ] 
+},
+"3426": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3426 ],
+"gdenamk": [ "Zuzwil (SG)" ],
+"anz_r": [ 25 ],
+"id": [ "3426" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3427": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3427 ],
+"gdenamk": [ "Wil (SG)" ],
+"anz_r": [ 616 ],
+"id": [ "3427" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3441": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3441 ],
+"gdenamk": [ "Andwil (SG)" ],
+"anz_r": [ 26 ],
+"id": [ "3441" ],
+"fillKey": [ "(19,42]" ] 
+},
+"3442": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3442 ],
+"gdenamk": [ "Gaiserwald" ],
+"anz_r": [ 119 ],
+"id": [ "3442" ],
+"fillKey": [ "(118,154]" ] 
+},
+"3443": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3443 ],
+"gdenamk": [ "Gossau (SG)" ],
+"anz_r": [ 309 ],
+"id": [ "3443" ],
+"fillKey": [ "(207,848]" ] 
+},
+"3444": {
+ "ktkz": [ "sg" ],
+"gdenr": [ 3444 ],
+"gdenamk": [ "Waldkirch" ],
+"anz_r": [ 42 ],
+"id": [ "3444" ],
+"fillKey": [ "(19,42]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/sg-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'switzerland.html';});
+                   } ,
+"id": "chart470c590d7d66" 
+}
+  chartParams.element = document.getElementById('chart470c590d7d66')
+  
+  
+  var mapchart470c590d7d66 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c590d7d66.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c590d7d66.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c590d7d66.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

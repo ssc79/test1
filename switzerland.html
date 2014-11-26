@@ -1,0 +1,352 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart4ca850c17acc' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart4ca850c17acc",
+"width": "100%",
+"height":   1000,
+"scope": "cantons",
+"fills": {
+ "(1,5.78]": "#F7FBFF",
+"(5.78,7.56]": "#DEEBF7",
+"(7.56,9]": "#C6DBEF",
+"(9,10]": "#9ECAE1",
+"(10,10.9]": "#6BAED6",
+"(10.9,12.7]": "#4292C6",
+"(12.7,13.4]": "#2171B5",
+"(13.4,15.2]": "#08519C",
+"(15.2,23]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "1": {
+ "ktkz": [ "zh" ],
+"ktname": [ "Zuerich" ],
+"anz_r": [ 21488 ],
+"anz_s": [   2057 ],
+"einb_r": [     10 ],
+"id": [ "1" ],
+"fillKey": [ "(9,10]" ] 
+},
+"10": {
+ "ktkz": [ "fr" ],
+"ktname": [ "Fribourg / Freiburg" ],
+"anz_r": [ 7758 ],
+"anz_s": [   1156 ],
+"einb_r": [     15 ],
+"id": [ "10" ],
+"fillKey": [ "(13.4,15.2]" ] 
+},
+"11": {
+ "ktkz": [ "so" ],
+"ktname": [ "Solothurn" ],
+"anz_r": [ 8605 ],
+"anz_s": [  825.5 ],
+"einb_r": [     10 ],
+"id": [ "11" ],
+"fillKey": [ "(9,10]" ] 
+},
+"12": {
+ "ktkz": [ "bs" ],
+"ktname": [ "Basel-Stadt" ],
+"anz_r": [ 1625 ],
+"anz_s": [      9 ],
+"einb_r": [      1 ],
+"id": [ "12" ],
+"fillKey": [ null ] 
+},
+"13": {
+ "ktkz": [ "bl" ],
+"ktname": [ "Basel-Landschaft" ],
+"anz_r": [ 15416 ],
+"anz_s": [  694.5 ],
+"einb_r": [      5 ],
+"id": [ "13" ],
+"fillKey": [ "(1,5.78]" ] 
+},
+"14": {
+ "ktkz": [ "sh" ],
+"ktname": [ "Schaffhausen" ],
+"anz_r": [ 1852 ],
+"anz_s": [  198.5 ],
+"einb_r": [     11 ],
+"id": [ "14" ],
+"fillKey": [ "(10.9,12.7]" ] 
+},
+"15": {
+ "ktkz": [ "ar" ],
+"ktname": [ "Appenzell Innerrhoden" ],
+"anz_r": [ 939 ],
+"anz_s": [    136 ],
+"einb_r": [     14 ],
+"id": [ "15" ],
+"fillKey": [ "(13.4,15.2]" ] 
+},
+"16": {
+ "ktkz": [ "ai" ],
+"ktname": [ "Appenzell Ausserrhoden" ],
+"anz_r": [ 279 ],
+"anz_s": [     64 ],
+"einb_r": [     23 ],
+"id": [ "16" ],
+"fillKey": [ "(15.2,23]" ] 
+},
+"17": {
+ "ktkz": [ "sg" ],
+"ktname": [ "St. Gallen" ],
+"anz_r": [ 8529 ],
+"anz_s": [ 1133.5 ],
+"einb_r": [     13 ],
+"id": [ "17" ],
+"fillKey": [ "(12.7,13.4]" ] 
+},
+"18": {
+ "ktkz": [ "gr" ],
+"ktname": [ "Graubuenden / Grigioni / Grischun" ],
+"anz_r": [ 10318 ],
+"anz_s": [ 1633.5 ],
+"einb_r": [     16 ],
+"id": [ "18" ],
+"fillKey": [ "(15.2,23]" ] 
+},
+"19": {
+ "ktkz": [ "ag" ],
+"ktname": [ "Aargau" ],
+"anz_r": [ 21611 ],
+"anz_s": [ 2027.5 ],
+"einb_r": [      9 ],
+"id": [ "19" ],
+"fillKey": [ "(7.56,9]" ] 
+},
+"2": {
+ "ktkz": [ "be" ],
+"ktname": [ "Bern / Berne" ],
+"anz_r": [ 21833 ],
+"anz_s": [   3008 ],
+"einb_r": [     14 ],
+"id": [ "2" ],
+"fillKey": [ "(13.4,15.2]" ] 
+},
+"20": {
+ "ktkz": [ "tg" ],
+"ktname": [ "Thurgau" ],
+"anz_r": [ 7884 ],
+"anz_s": [  967.5 ],
+"einb_r": [     12 ],
+"id": [ "20" ],
+"fillKey": [ "(10.9,12.7]" ] 
+},
+"21": {
+ "ktkz": [ "ti" ],
+"ktname": [ "Ticino" ],
+"anz_r": [ 24463 ],
+"anz_s": [ 2079.5 ],
+"einb_r": [      9 ],
+"id": [ "21" ],
+"fillKey": [ "(7.56,9]" ] 
+},
+"22": {
+ "ktkz": [ "vd" ],
+"ktname": [ "Vaud" ],
+"anz_r": [ 15437 ],
+"anz_s": [   1999 ],
+"einb_r": [     13 ],
+"id": [ "22" ],
+"fillKey": [ "(12.7,13.4]" ] 
+},
+"23": {
+ "ktkz": [ "vs" ],
+"ktname": [ "Valais / Wallis" ],
+"anz_r": [ 21607 ],
+"anz_s": [   1698 ],
+"einb_r": [      8 ],
+"id": [ "23" ],
+"fillKey": [ "(7.56,9]" ] 
+},
+"24": {
+ "ktkz": [ "ne" ],
+"ktname": [ "Neuchatel" ],
+"anz_r": [ 4802 ],
+"anz_s": [  553.5 ],
+"einb_r": [     12 ],
+"id": [ "24" ],
+"fillKey": [ "(10.9,12.7]" ] 
+},
+"25": {
+ "ktkz": [ "ge" ],
+"ktname": [ "Geneve" ],
+"anz_r": [ 7575 ],
+"anz_s": [  434.5 ],
+"einb_r": [      6 ],
+"id": [ "25" ],
+"fillKey": [ "(5.78,7.56]" ] 
+},
+"26": {
+ "ktkz": [ "ju" ],
+"ktname": [ "Jura" ],
+"anz_r": [ 2671 ],
+"anz_s": [  339.5 ],
+"einb_r": [     13 ],
+"id": [ "26" ],
+"fillKey": [ "(12.7,13.4]" ] 
+},
+"3": {
+ "ktkz": [ "lu" ],
+"ktname": [ "Luzern" ],
+"anz_r": [ 14304 ],
+"anz_s": [ 1094.5 ],
+"einb_r": [      8 ],
+"id": [ "3" ],
+"fillKey": [ "(7.56,9]" ] 
+},
+"4": {
+ "ktkz": [ "ur" ],
+"ktname": [ "Uri" ],
+"anz_r": [ 2303 ],
+"anz_s": [    232 ],
+"einb_r": [     10 ],
+"id": [ "4" ],
+"fillKey": [ "(9,10]" ] 
+},
+"5": {
+ "ktkz": [ "sz" ],
+"ktname": [ "Schwyz" ],
+"anz_r": [ 6040 ],
+"anz_s": [  442.5 ],
+"einb_r": [      7 ],
+"id": [ "5" ],
+"fillKey": [ "(5.78,7.56]" ] 
+},
+"6": {
+ "ktkz": [ "ow" ],
+"ktname": [ "Obwalden" ],
+"anz_r": [ 2053 ],
+"anz_s": [  144.5 ],
+"einb_r": [      7 ],
+"id": [ "6" ],
+"fillKey": [ "(5.78,7.56]" ] 
+},
+"7": {
+ "ktkz": [ "nw" ],
+"ktname": [ "Nidwalden" ],
+"anz_r": [ 1323 ],
+"anz_s": [    120 ],
+"einb_r": [      9 ],
+"id": [ "7" ],
+"fillKey": [ "(7.56,9]" ] 
+},
+"8": {
+ "ktkz": [ "gl" ],
+"ktname": [ "Glarus" ],
+"anz_r": [ 766 ],
+"anz_s": [  153.5 ],
+"einb_r": [     20 ],
+"id": [ "8" ],
+"fillKey": [ "(15.2,23]" ] 
+},
+"9": {
+ "ktkz": [ "zg" ],
+"ktname": [ "Zug" ],
+"anz_r": [ 3281 ],
+"anz_s": [    122 ],
+"einb_r": [      4 ],
+"id": [ "9" ],
+"fillKey": [ "(1,5.78]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/ch-cantons.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.ktname + ': ' + data.einb_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = map.options.data[geography.id].ktkz+'.html';});
+                   } ,
+"id": "chart4ca850c17acc" 
+}
+  chartParams.element = document.getElementById('chart4ca850c17acc')
+  
+  
+  var mapchart4ca850c17acc = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart4ca850c17acc.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart4ca850c17acc.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart4ca850c17acc.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

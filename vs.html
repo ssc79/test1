@@ -1,0 +1,1078 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c504a6f0' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c504a6f0",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(8,36.4]": "#F7FBFF",
+"(36.4,52]": "#DEEBF7",
+"(52,73.7]": "#C6DBEF",
+"(73.7,86]": "#9ECAE1",
+"(86,112]": "#6BAED6",
+"(112,148]": "#4292C6",
+"(148,222]": "#2171B5",
+"(222,463]": "#08519C",
+"(463,1.13e+03]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "6002": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6002 ],
+"gdenamk": [ "Brig-Glis" ],
+"anz_r": [ 410 ],
+"id": [ "6002" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6004": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6004 ],
+"gdenamk": [ "Eggerberg" ],
+"anz_r": [ 51 ],
+"id": [ "6004" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6007": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6007 ],
+"gdenamk": [ "Naters" ],
+"anz_r": [ 746 ],
+"id": [ "6007" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6008": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6008 ],
+"gdenamk": [ "Ried-Brig" ],
+"anz_r": [ 474 ],
+"id": [ "6008" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6009": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6009 ],
+"gdenamk": [ "Simplon" ],
+"anz_r": [ 64 ],
+"id": [ "6009" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6010": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6010 ],
+"gdenamk": [ "Termen" ],
+"anz_r": [ 56 ],
+"id": [ "6010" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6021": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6021 ],
+"gdenamk": [ "Ardon" ],
+"anz_r": [ 128 ],
+"id": [ "6021" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6022": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6022 ],
+"gdenamk": [ "Chamoson" ],
+"anz_r": [ 242 ],
+"id": [ "6022" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6023": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6023 ],
+"gdenamk": [ "Conthey" ],
+"anz_r": [ 268 ],
+"id": [ "6023" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6024": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6024 ],
+"gdenamk": [ "Nendaz" ],
+"anz_r": [ 470 ],
+"id": [ "6024" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6025": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6025 ],
+"gdenamk": [ "Vétroz" ],
+"anz_r": [ 114 ],
+"id": [ "6025" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6031": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6031 ],
+"gdenamk": [ "Bagnes" ],
+"anz_r": [ 1087 ],
+"id": [ "6031" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6032": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6032 ],
+"gdenamk": [ "Bourg-Saint-Pierre" ],
+"anz_r": [ 17 ],
+"id": [ "6032" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6033": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6033 ],
+"gdenamk": [ "Liddes" ],
+"anz_r": [ 43 ],
+"id": [ "6033" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6034": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6034 ],
+"gdenamk": [ "Orsières" ],
+"anz_r": [ 328 ],
+"id": [ "6034" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6035": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6035 ],
+"gdenamk": [ "Sembrancher" ],
+"anz_r": [ 52 ],
+"id": [ "6035" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6036": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6036 ],
+"gdenamk": [ "Vollèges" ],
+"anz_r": [ 86 ],
+"id": [ "6036" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6052": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6052 ],
+"gdenamk": [ "Bellwald" ],
+"anz_r": [ 135 ],
+"id": [ "6052" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6054": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6054 ],
+"gdenamk": [ "Binn" ],
+"anz_r": [ 38 ],
+"id": [ "6054" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6056": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6056 ],
+"gdenamk": [ "Ernen" ],
+"anz_r": [ 165 ],
+"id": [ "6056" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6057": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6057 ],
+"gdenamk": [ "Fiesch" ],
+"anz_r": [ 363 ],
+"id": [ "6057" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6061": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6061 ],
+"gdenamk": [ "Lax" ],
+"anz_r": [ 82 ],
+"id": [ "6061" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6073": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6073 ],
+"gdenamk": [ "Grafschaft" ],
+"anz_r": [ 80 ],
+"id": [ "6073" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6074": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6074 ],
+"gdenamk": [ "Muenster-Geschinen" ],
+"anz_r": [ 223 ],
+"id": [ "6074" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6075": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6075 ],
+"gdenamk": [ "Reckingen-Gluringen" ],
+"anz_r": [ 152 ],
+"id": [ "6075" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6076": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6076 ],
+"gdenamk": [ "Obergoms" ],
+"anz_r": [ 230 ],
+"id": [ "6076" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6081": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6081 ],
+"gdenamk": [ "Les Agettes" ],
+"anz_r": [ 52 ],
+"id": [ "6081" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6082": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6082 ],
+"gdenamk": [ "Ayent" ],
+"anz_r": [ 436 ],
+"id": [ "6082" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6083": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6083 ],
+"gdenamk": [ "Evolène" ],
+"anz_r": [ 220 ],
+"id": [ "6083" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6084": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6084 ],
+"gdenamk": [ "Hérémence" ],
+"anz_r": [ 102 ],
+"id": [ "6084" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6087": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6087 ],
+"gdenamk": [ "Saint-Martin (VS)" ],
+"anz_r": [ 84 ],
+"id": [ "6087" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6089": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6089 ],
+"gdenamk": [ "Vex" ],
+"anz_r": [ 106 ],
+"id": [ "6089" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6090": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6090 ],
+"gdenamk": [ "Mont-Noble" ],
+"anz_r": [ 79 ],
+"id": [ "6090" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6101": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6101 ],
+"gdenamk": [ "Agarn" ],
+"anz_r": [ 65 ],
+"id": [ "6101" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6102": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6102 ],
+"gdenamk": [ "Albinen" ],
+"anz_r": [ 51 ],
+"id": [ "6102" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6104": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6104 ],
+"gdenamk": [ "Ergisch" ],
+"anz_r": [ 24 ],
+"id": [ "6104" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6109": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6109 ],
+"gdenamk": [ "Inden" ],
+"anz_r": [ 142 ],
+"id": [ "6109" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6110": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6110 ],
+"gdenamk": [ "Leuk" ],
+"anz_r": [ 125 ],
+"id": [ "6110" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6111": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6111 ],
+"gdenamk": [ "Leukerbad" ],
+"anz_r": [ 278 ],
+"id": [ "6111" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6112": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6112 ],
+"gdenamk": [ "Oberems" ],
+"anz_r": [ 99 ],
+"id": [ "6112" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6113": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6113 ],
+"gdenamk": [ "Salgesch" ],
+"anz_r": [ 198 ],
+"id": [ "6113" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6117": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6117 ],
+"gdenamk": [ "Guttet-Feschel" ],
+"anz_r": [ 46 ],
+"id": [ "6117" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6118": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6118 ],
+"gdenamk": [ "Gampel-Bratsch" ],
+"anz_r": [ 171 ],
+"id": [ "6118" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6131": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6131 ],
+"gdenamk": [ "Bovernier" ],
+"anz_r": [ 63 ],
+"id": [ "6131" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6132": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6132 ],
+"gdenamk": [ "Charrat" ],
+"anz_r": [ 86 ],
+"id": [ "6132" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6133": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6133 ],
+"gdenamk": [ "Fully" ],
+"anz_r": [ 350 ],
+"id": [ "6133" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6135": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6135 ],
+"gdenamk": [ "Leytron" ],
+"anz_r": [ 93 ],
+"id": [ "6135" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6136": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6136 ],
+"gdenamk": [ "Martigny" ],
+"anz_r": [ 89 ],
+"id": [ "6136" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6137": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6137 ],
+"gdenamk": [ "Martigny-Combe" ],
+"anz_r": [ 163 ],
+"id": [ "6137" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6139": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6139 ],
+"gdenamk": [ "Riddes" ],
+"anz_r": [ 181 ],
+"id": [ "6139" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6140": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6140 ],
+"gdenamk": [ "Saillon" ],
+"anz_r": [ 103 ],
+"id": [ "6140" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6141": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6141 ],
+"gdenamk": [ "Saxon" ],
+"anz_r": [ 191 ],
+"id": [ "6141" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6142": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6142 ],
+"gdenamk": [ "Trient" ],
+"anz_r": [ 23 ],
+"id": [ "6142" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6151": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6151 ],
+"gdenamk": [ "Champéry" ],
+"anz_r": [ 237 ],
+"id": [ "6151" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6152": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6152 ],
+"gdenamk": [ "Collombey-Muraz" ],
+"anz_r": [ 237 ],
+"id": [ "6152" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6153": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6153 ],
+"gdenamk": [ "Monthey" ],
+"anz_r": [ 581 ],
+"id": [ "6153" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6154": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6154 ],
+"gdenamk": [ "Port-Valais" ],
+"anz_r": [ 83 ],
+"id": [ "6154" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6155": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6155 ],
+"gdenamk": [ "Saint-Gingolph" ],
+"anz_r": [ 32 ],
+"id": [ "6155" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6156": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6156 ],
+"gdenamk": [ "Troistorrents" ],
+"anz_r": [ 491 ],
+"id": [ "6156" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6157": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6157 ],
+"gdenamk": [ "Val-d'Illiez" ],
+"anz_r": [ 189 ],
+"id": [ "6157" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6158": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6158 ],
+"gdenamk": [ "Vionnaz" ],
+"anz_r": [ 96 ],
+"id": [ "6158" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6159": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6159 ],
+"gdenamk": [ "Vouvry" ],
+"anz_r": [ 131 ],
+"id": [ "6159" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6172": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6172 ],
+"gdenamk": [ "Bister" ],
+"anz_r": [ 79 ],
+"id": [ "6172" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6173": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6173 ],
+"gdenamk": [ "Bitsch" ],
+"anz_r": [ 50 ],
+"id": [ "6173" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6177": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6177 ],
+"gdenamk": [ "Grengiols" ],
+"anz_r": [ 38 ],
+"id": [ "6177" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6181": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6181 ],
+"gdenamk": [ "Riederalp" ],
+"anz_r": [ 121 ],
+"id": [ "6181" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6191": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6191 ],
+"gdenamk": [ "Ausserberg" ],
+"anz_r": [ 25 ],
+"id": [ "6191" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6192": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6192 ],
+"gdenamk": [ "Blatten" ],
+"anz_r": [ 34 ],
+"id": [ "6192" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6193": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6193 ],
+"gdenamk": [ "Buerchen" ],
+"anz_r": [ 137 ],
+"id": [ "6193" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6194": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6194 ],
+"gdenamk": [ "Eischoll" ],
+"anz_r": [ 71 ],
+"id": [ "6194" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6195": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6195 ],
+"gdenamk": [ "Ferden" ],
+"anz_r": [ 92 ],
+"id": [ "6195" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6198": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6198 ],
+"gdenamk": [ "Niedergesteln" ],
+"anz_r": [ 177 ],
+"id": [ "6198" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6201": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6201 ],
+"gdenamk": [ "Unterbaech" ],
+"anz_r": [ 77 ],
+"id": [ "6201" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6202": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6202 ],
+"gdenamk": [ "Wiler (Loetschen)" ],
+"anz_r": [ 51 ],
+"id": [ "6202" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6204": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6204 ],
+"gdenamk": [ "Steg-Hohtenn" ],
+"anz_r": [ 66 ],
+"id": [ "6204" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6205": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6205 ],
+"gdenamk": [ "Bettmeralp" ],
+"anz_r": [ 105 ],
+"id": [ "6205" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6211": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6211 ],
+"gdenamk": [ "Collonges" ],
+"anz_r": [ 56 ],
+"id": [ "6211" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6212": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6212 ],
+"gdenamk": [ "Dorénaz" ],
+"anz_r": [ 41 ],
+"id": [ "6212" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6213": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6213 ],
+"gdenamk": [ "Evionnaz" ],
+"anz_r": [ 97 ],
+"id": [ "6213" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6214": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6214 ],
+"gdenamk": [ "Finhaut" ],
+"anz_r": [ 30 ],
+"id": [ "6214" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6215": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6215 ],
+"gdenamk": [ "Massongex" ],
+"anz_r": [ 81 ],
+"id": [ "6215" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6217": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6217 ],
+"gdenamk": [ "Saint-Maurice" ],
+"anz_r": [ 146 ],
+"id": [ "6217" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6218": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6218 ],
+"gdenamk": [ "Salvan" ],
+"anz_r": [ 134 ],
+"id": [ "6218" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6219": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6219 ],
+"gdenamk": [ "Vernayaz" ],
+"anz_r": [ 663 ],
+"id": [ "6219" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6220": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6220 ],
+"gdenamk": [ "Vérossaz" ],
+"anz_r": [ 75 ],
+"id": [ "6220" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6232": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6232 ],
+"gdenamk": [ "Chalais" ],
+"anz_r": [ 536 ],
+"id": [ "6232" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6234": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6234 ],
+"gdenamk": [ "Chermignon" ],
+"anz_r": [ 35 ],
+"id": [ "6234" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6235": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6235 ],
+"gdenamk": [ "Chippis" ],
+"anz_r": [ 56 ],
+"id": [ "6235" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6238": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6238 ],
+"gdenamk": [ "Grône" ],
+"anz_r": [ 107 ],
+"id": [ "6238" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6239": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6239 ],
+"gdenamk": [ "Icogne" ],
+"anz_r": [ 18 ],
+"id": [ "6239" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6240": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6240 ],
+"gdenamk": [ "Lens" ],
+"anz_r": [ 65 ],
+"id": [ "6240" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6242": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6242 ],
+"gdenamk": [ "Mollens (VS)" ],
+"anz_r": [ 924 ],
+"id": [ "6242" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6243": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6243 ],
+"gdenamk": [ "Montana" ],
+"anz_r": [ 649 ],
+"id": [ "6243" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6244": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6244 ],
+"gdenamk": [ "Randogne" ],
+"anz_r": [ 162 ],
+"id": [ "6244" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6246": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6246 ],
+"gdenamk": [ "Saint-Léonard" ],
+"anz_r": [ 138 ],
+"id": [ "6246" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6248": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6248 ],
+"gdenamk": [ "Sierre" ],
+"anz_r": [ 124 ],
+"id": [ "6248" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6250": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6250 ],
+"gdenamk": [ "Veyras" ],
+"anz_r": [ 62 ],
+"id": [ "6250" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6252": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6252 ],
+"gdenamk": [ "Anniviers" ],
+"anz_r": [ 515 ],
+"id": [ "6252" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6261": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6261 ],
+"gdenamk": [ "Arbaz" ],
+"anz_r": [ 77 ],
+"id": [ "6261" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6263": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6263 ],
+"gdenamk": [ "Grimisuat" ],
+"anz_r": [ 96 ],
+"id": [ "6263" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6265": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6265 ],
+"gdenamk": [ "Savièse" ],
+"anz_r": [ 586 ],
+"id": [ "6265" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6266": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6266 ],
+"gdenamk": [ "Sion" ],
+"anz_r": [ 1134 ],
+"id": [ "6266" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+},
+"6281": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6281 ],
+"gdenamk": [ "Baltschieder" ],
+"anz_r": [ 80 ],
+"id": [ "6281" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6282": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6282 ],
+"gdenamk": [ "Eisten" ],
+"anz_r": [ 43 ],
+"id": [ "6282" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6283": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6283 ],
+"gdenamk": [ "Embd" ],
+"anz_r": [ 8 ],
+"id": [ "6283" ],
+"fillKey": [ null ] 
+},
+"6285": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6285 ],
+"gdenamk": [ "Graechen" ],
+"anz_r": [ 112 ],
+"id": [ "6285" ],
+"fillKey": [ "(86,112]" ] 
+},
+"6286": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6286 ],
+"gdenamk": [ "Lalden" ],
+"anz_r": [ 66 ],
+"id": [ "6286" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6287": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6287 ],
+"gdenamk": [ "Randa" ],
+"anz_r": [ 29 ],
+"id": [ "6287" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6288": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6288 ],
+"gdenamk": [ "Saas-Almagell" ],
+"anz_r": [ 46 ],
+"id": [ "6288" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6289": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6289 ],
+"gdenamk": [ "Saas-Balen" ],
+"anz_r": [ 29 ],
+"id": [ "6289" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6290": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6290 ],
+"gdenamk": [ "Saas-Fee" ],
+"anz_r": [ 197 ],
+"id": [ "6290" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6291": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6291 ],
+"gdenamk": [ "Saas-Grund" ],
+"anz_r": [ 126 ],
+"id": [ "6291" ],
+"fillKey": [ "(112,148]" ] 
+},
+"6292": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6292 ],
+"gdenamk": [ "St. Niklaus" ],
+"anz_r": [ 165 ],
+"id": [ "6292" ],
+"fillKey": [ "(148,222]" ] 
+},
+"6294": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6294 ],
+"gdenamk": [ "Staldenried" ],
+"anz_r": [ 20 ],
+"id": [ "6294" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6295": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6295 ],
+"gdenamk": [ "Taesch" ],
+"anz_r": [ 53 ],
+"id": [ "6295" ],
+"fillKey": [ "(52,73.7]" ] 
+},
+"6296": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6296 ],
+"gdenamk": [ "Toerbel" ],
+"anz_r": [ 45 ],
+"id": [ "6296" ],
+"fillKey": [ "(36.4,52]" ] 
+},
+"6297": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6297 ],
+"gdenamk": [ "Visp" ],
+"anz_r": [ 440 ],
+"id": [ "6297" ],
+"fillKey": [ "(222,463]" ] 
+},
+"6298": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6298 ],
+"gdenamk": [ "Visperterminen" ],
+"anz_r": [ 75 ],
+"id": [ "6298" ],
+"fillKey": [ "(73.7,86]" ] 
+},
+"6299": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6299 ],
+"gdenamk": [ "Zeneggen" ],
+"anz_r": [ 36 ],
+"id": [ "6299" ],
+"fillKey": [ "(8,36.4]" ] 
+},
+"6300": {
+ "ktkz": [ "vs" ],
+"gdenr": [ 6300 ],
+"gdenamk": [ "Zermatt" ],
+"anz_r": [ 506 ],
+"id": [ "6300" ],
+"fillKey": [ "(463,1.13e+03]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/vs-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'switzerland.html';});
+                   } ,
+"id": "chart470c504a6f0" 
+}
+  chartParams.element = document.getElementById('chart470c504a6f0')
+  
+  
+  var mapchart470c504a6f0 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c504a6f0.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c504a6f0.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c504a6f0.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

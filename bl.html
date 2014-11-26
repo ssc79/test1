@@ -1,0 +1,782 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c423058c3' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c423058c3",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(6,17.1]": "#F7FBFF",
+"(17.1,26.4]": "#DEEBF7",
+"(26.4,36.3]": "#C6DBEF",
+"(36.3,55.2]": "#9ECAE1",
+"(55.2,75.8]": "#6BAED6",
+"(75.8,96]": "#4292C6",
+"(96,207]": "#2171B5",
+"(207,601]": "#08519C",
+"(601,1.81e+03]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "2761": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2761 ],
+"gdenamk": [ "Aesch (BL)" ],
+"anz_r": [ 605 ],
+"id": [ "2761" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2762": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2762 ],
+"gdenamk": [ "Allschwil" ],
+"anz_r": [ 1225 ],
+"id": [ "2762" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2763": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2763 ],
+"gdenamk": [ "Arlesheim" ],
+"anz_r": [ 601 ],
+"id": [ "2763" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2764": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2764 ],
+"gdenamk": [ "Biel-Benken" ],
+"anz_r": [ 149 ],
+"id": [ "2764" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2765": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2765 ],
+"gdenamk": [ "Binningen" ],
+"anz_r": [ 906 ],
+"id": [ "2765" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2766": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2766 ],
+"gdenamk": [ "Birsfelden" ],
+"anz_r": [ 682 ],
+"id": [ "2766" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2767": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2767 ],
+"gdenamk": [ "Bottmingen" ],
+"anz_r": [ 354 ],
+"id": [ "2767" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2768": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2768 ],
+"gdenamk": [ "Ettingen" ],
+"anz_r": [ 298 ],
+"id": [ "2768" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2769": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2769 ],
+"gdenamk": [ "Muenchenstein" ],
+"anz_r": [ 737 ],
+"id": [ "2769" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2770": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2770 ],
+"gdenamk": [ "Muttenz" ],
+"anz_r": [ 910 ],
+"id": [ "2770" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2771": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2771 ],
+"gdenamk": [ "Oberwil (BL)" ],
+"anz_r": [ 691 ],
+"id": [ "2771" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2772": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2772 ],
+"gdenamk": [ "Pfeffingen" ],
+"anz_r": [ 145 ],
+"id": [ "2772" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2774": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2774 ],
+"gdenamk": [ "Schoenenbuch" ],
+"anz_r": [ 96 ],
+"id": [ "2774" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2775": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2775 ],
+"gdenamk": [ "Therwil" ],
+"anz_r": [ 1809 ],
+"id": [ "2775" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2781": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2781 ],
+"gdenamk": [ "Blauen" ],
+"anz_r": [ 39 ],
+"id": [ "2781" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2782": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2782 ],
+"gdenamk": [ "Brislach" ],
+"anz_r": [ 85 ],
+"id": [ "2782" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2783": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2783 ],
+"gdenamk": [ "Burg im Leimental" ],
+"anz_r": [ 24 ],
+"id": [ "2783" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2784": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2784 ],
+"gdenamk": [ "Dittingen" ],
+"anz_r": [ 44 ],
+"id": [ "2784" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2785": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2785 ],
+"gdenamk": [ "Duggingen" ],
+"anz_r": [ 73 ],
+"id": [ "2785" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2786": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2786 ],
+"gdenamk": [ "Grellingen" ],
+"anz_r": [ 69 ],
+"id": [ "2786" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2787": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2787 ],
+"gdenamk": [ "Laufen" ],
+"anz_r": [ 242 ],
+"id": [ "2787" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2788": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2788 ],
+"gdenamk": [ "Liesberg" ],
+"anz_r": [ 68 ],
+"id": [ "2788" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2789": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2789 ],
+"gdenamk": [ "Nenzlingen" ],
+"anz_r": [ 36 ],
+"id": [ "2789" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2790": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2790 ],
+"gdenamk": [ "Roggenburg" ],
+"anz_r": [ 17 ],
+"id": [ "2790" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2791": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2791 ],
+"gdenamk": [ "Roeschenz" ],
+"anz_r": [ 89 ],
+"id": [ "2791" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2792": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2792 ],
+"gdenamk": [ "Wahlen" ],
+"anz_r": [ 53 ],
+"id": [ "2792" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2793": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2793 ],
+"gdenamk": [ "Zwingen" ],
+"anz_r": [ 143 ],
+"id": [ "2793" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2821": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2821 ],
+"gdenamk": [ "Arisdorf" ],
+"anz_r": [ 92 ],
+"id": [ "2821" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2822": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2822 ],
+"gdenamk": [ "Augst" ],
+"anz_r": [ 59 ],
+"id": [ "2822" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2823": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2823 ],
+"gdenamk": [ "Bubendorf" ],
+"anz_r": [ 202 ],
+"id": [ "2823" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2824": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2824 ],
+"gdenamk": [ "Frenkendorf" ],
+"anz_r": [ 306 ],
+"id": [ "2824" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2825": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2825 ],
+"gdenamk": [ "Fuellinsdorf" ],
+"anz_r": [ 247 ],
+"id": [ "2825" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2826": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2826 ],
+"gdenamk": [ "Giebenach" ],
+"anz_r": [ 58 ],
+"id": [ "2826" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2827": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2827 ],
+"gdenamk": [ "Hersberg" ],
+"anz_r": [ 18 ],
+"id": [ "2827" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2828": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2828 ],
+"gdenamk": [ "Lausen" ],
+"anz_r": [ 209 ],
+"id": [ "2828" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2829": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2829 ],
+"gdenamk": [ "Liestal" ],
+"anz_r": [ 598 ],
+"id": [ "2829" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2830": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2830 ],
+"gdenamk": [ "Lupsingen" ],
+"anz_r": [ 78 ],
+"id": [ "2830" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2831": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2831 ],
+"gdenamk": [ "Pratteln" ],
+"anz_r": [ 879 ],
+"id": [ "2831" ],
+"fillKey": [ "(601,1.81e+03]" ] 
+},
+"2832": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2832 ],
+"gdenamk": [ "Ramlinsburg" ],
+"anz_r": [ 31 ],
+"id": [ "2832" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2833": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2833 ],
+"gdenamk": [ "Seltisberg" ],
+"anz_r": [ 61 ],
+"id": [ "2833" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2834": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2834 ],
+"gdenamk": [ "Ziefen" ],
+"anz_r": [ 83 ],
+"id": [ "2834" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2841": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2841 ],
+"gdenamk": [ "Anwil" ],
+"anz_r": [ 14 ],
+"id": [ "2841" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2842": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2842 ],
+"gdenamk": [ "Boeckten" ],
+"anz_r": [ 29 ],
+"id": [ "2842" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2843": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2843 ],
+"gdenamk": [ "Buckten" ],
+"anz_r": [ 37 ],
+"id": [ "2843" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2844": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2844 ],
+"gdenamk": [ "Buus" ],
+"anz_r": [ 37 ],
+"id": [ "2844" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2845": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2845 ],
+"gdenamk": [ "Diepflingen" ],
+"anz_r": [ 25 ],
+"id": [ "2845" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2846": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2846 ],
+"gdenamk": [ "Gelterkinden" ],
+"anz_r": [ 237 ],
+"id": [ "2846" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2847": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2847 ],
+"gdenamk": [ "Haefelfingen" ],
+"anz_r": [ 11 ],
+"id": [ "2847" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2848": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2848 ],
+"gdenamk": [ "Hemmiken" ],
+"anz_r": [ 17 ],
+"id": [ "2848" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2849": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2849 ],
+"gdenamk": [ "Itingen" ],
+"anz_r": [ 90 ],
+"id": [ "2849" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2850": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2850 ],
+"gdenamk": [ "Kaenerkinden" ],
+"anz_r": [ 19 ],
+"id": [ "2850" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2851": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2851 ],
+"gdenamk": [ "Kilchberg (BL)" ],
+"anz_r": [ 6 ],
+"id": [ "2851" ],
+"fillKey": [ null ] 
+},
+"2853": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2853 ],
+"gdenamk": [ "Maisprach" ],
+"anz_r": [ 49 ],
+"id": [ "2853" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2854": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2854 ],
+"gdenamk": [ "Nusshof" ],
+"anz_r": [ 15 ],
+"id": [ "2854" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2855": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2855 ],
+"gdenamk": [ "Oltingen" ],
+"anz_r": [ 12 ],
+"id": [ "2855" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2856": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2856 ],
+"gdenamk": [ "Ormalingen" ],
+"anz_r": [ 82 ],
+"id": [ "2856" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2857": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2857 ],
+"gdenamk": [ "Rickenbach (BL)" ],
+"anz_r": [ 29 ],
+"id": [ "2857" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2858": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2858 ],
+"gdenamk": [ "Rothenfluh" ],
+"anz_r": [ 29 ],
+"id": [ "2858" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2859": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2859 ],
+"gdenamk": [ "Ruemlingen" ],
+"anz_r": [ 12 ],
+"id": [ "2859" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2860": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2860 ],
+"gdenamk": [ "Ruenenberg" ],
+"anz_r": [ 28 ],
+"id": [ "2860" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2861": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2861 ],
+"gdenamk": [ "Sissach" ],
+"anz_r": [ 305 ],
+"id": [ "2861" ],
+"fillKey": [ "(207,601]" ] 
+},
+"2862": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2862 ],
+"gdenamk": [ "Tecknau" ],
+"anz_r": [ 22 ],
+"id": [ "2862" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2863": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2863 ],
+"gdenamk": [ "Tenniken" ],
+"anz_r": [ 69 ],
+"id": [ "2863" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2864": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2864 ],
+"gdenamk": [ "Thuernen" ],
+"anz_r": [ 68 ],
+"id": [ "2864" ],
+"fillKey": [ "(55.2,75.8]" ] 
+},
+"2865": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2865 ],
+"gdenamk": [ "Wenslingen" ],
+"anz_r": [ 24 ],
+"id": [ "2865" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2866": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2866 ],
+"gdenamk": [ "Wintersingen" ],
+"anz_r": [ 29 ],
+"id": [ "2866" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2867": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2867 ],
+"gdenamk": [ "Wittinsburg" ],
+"anz_r": [ 19 ],
+"id": [ "2867" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2868": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2868 ],
+"gdenamk": [ "Zeglingen" ],
+"anz_r": [ 13 ],
+"id": [ "2868" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2869": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2869 ],
+"gdenamk": [ "Zunzgen" ],
+"anz_r": [ 116 ],
+"id": [ "2869" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2881": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2881 ],
+"gdenamk": [ "Arboldswil" ],
+"anz_r": [ 26 ],
+"id": [ "2881" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2882": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2882 ],
+"gdenamk": [ "Bennwil" ],
+"anz_r": [ 29 ],
+"id": [ "2882" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2883": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2883 ],
+"gdenamk": [ "Bretzwil" ],
+"anz_r": [ 45 ],
+"id": [ "2883" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2884": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2884 ],
+"gdenamk": [ "Diegten" ],
+"anz_r": [ 136 ],
+"id": [ "2884" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2885": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2885 ],
+"gdenamk": [ "Eptingen" ],
+"anz_r": [ 23 ],
+"id": [ "2885" ],
+"fillKey": [ "(17.1,26.4]" ] 
+},
+"2886": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2886 ],
+"gdenamk": [ "Hoelstein" ],
+"anz_r": [ 119 ],
+"id": [ "2886" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2887": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2887 ],
+"gdenamk": [ "Lampenberg" ],
+"anz_r": [ 40 ],
+"id": [ "2887" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2888": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2888 ],
+"gdenamk": [ "Langenbruck" ],
+"anz_r": [ 47 ],
+"id": [ "2888" ],
+"fillKey": [ "(36.3,55.2]" ] 
+},
+"2889": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2889 ],
+"gdenamk": [ "Lauwil" ],
+"anz_r": [ 36 ],
+"id": [ "2889" ],
+"fillKey": [ "(26.4,36.3]" ] 
+},
+"2890": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2890 ],
+"gdenamk": [ "Liedertswil" ],
+"anz_r": [ 108 ],
+"id": [ "2890" ],
+"fillKey": [ "(96,207]" ] 
+},
+"2891": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2891 ],
+"gdenamk": [ "Niederdorf" ],
+"anz_r": [ 79 ],
+"id": [ "2891" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2893": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2893 ],
+"gdenamk": [ "Reigoldswil" ],
+"anz_r": [ 96 ],
+"id": [ "2893" ],
+"fillKey": [ "(75.8,96]" ] 
+},
+"2894": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2894 ],
+"gdenamk": [ "Titterten" ],
+"anz_r": [ 16 ],
+"id": [ "2894" ],
+"fillKey": [ "(6,17.1]" ] 
+},
+"2895": {
+ "ktkz": [ "bl" ],
+"gdenr": [ 2895 ],
+"gdenamk": [ "Waldenburg" ],
+"anz_r": [ 62 ],
+"id": [ "2895" ],
+"fillKey": [ "(55.2,75.8]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/bl-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'index.html';});
+                   } ,
+"id": "chart470c423058c3" 
+}
+  chartParams.element = document.getElementById('chart470c423058c3')
+  
+  
+  var mapchart470c423058c3 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c423058c3.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c423058c3.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c423058c3.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

@@ -1,0 +1,1214 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c6e595561' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c6e595561",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(1,9]": "#F7FBFF",
+"(9,11]": "#DEEBF7",
+"(11,16]": "#C6DBEF",
+"(16,21]": "#9ECAE1",
+"(21,27]": "#6BAED6",
+"(27,39]": "#4292C6",
+"(39,56]": "#2171B5",
+"(56,112]": "#08519C",
+"(112,1.29e+03]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "2004": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2004 ],
+"gdenamk": [ "Bussy (FR)" ],
+"anz_r": [ 10 ],
+"id": [ "2004" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2005": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2005 ],
+"gdenamk": [ "Châbles" ],
+"anz_r": [ 10 ],
+"id": [ "2005" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2008": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2008 ],
+"gdenamk": [ "Châtillon (FR)" ],
+"anz_r": [ 10 ],
+"id": [ "2008" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2009": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2009 ],
+"gdenamk": [ "Cheiry" ],
+"anz_r": [ 10 ],
+"id": [ "2009" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2010": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2010 ],
+"gdenamk": [ "Cheyres" ],
+"anz_r": [ 56 ],
+"id": [ "2010" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2011": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2011 ],
+"gdenamk": [ "Cugy (FR)" ],
+"anz_r": [ 10 ],
+"id": [ "2011" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2013": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2013 ],
+"gdenamk": [ "Domdidier" ],
+"anz_r": [ 47 ],
+"id": [ "2013" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2014": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2014 ],
+"gdenamk": [ "Dompierre (FR)" ],
+"anz_r": [ 19 ],
+"id": [ "2014" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2016": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2016 ],
+"gdenamk": [ "Fétigny" ],
+"anz_r": [ 20 ],
+"id": [ "2016" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2022": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2022 ],
+"gdenamk": [ "Gletterens" ],
+"anz_r": [ 26 ],
+"id": [ "2022" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2024": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2024 ],
+"gdenamk": [ "Léchelles" ],
+"anz_r": [ 17 ],
+"id": [ "2024" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2025": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2025 ],
+"gdenamk": [ "Lully (FR)" ],
+"anz_r": [ 109 ],
+"id": [ "2025" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2027": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2027 ],
+"gdenamk": [ "Ménières" ],
+"anz_r": [ 1 ],
+"id": [ "2027" ],
+"fillKey": [ null ] 
+},
+"2029": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2029 ],
+"gdenamk": [ "Montagny (FR)" ],
+"anz_r": [ 92 ],
+"id": [ "2029" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2034": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2034 ],
+"gdenamk": [ "Murist" ],
+"anz_r": [ 7 ],
+"id": [ "2034" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2035": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2035 ],
+"gdenamk": [ "Nuvilly" ],
+"anz_r": [ 10 ],
+"id": [ "2035" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2039": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2039 ],
+"gdenamk": [ "Rueyres-les-Prés" ],
+"anz_r": [ 2 ],
+"id": [ "2039" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2041": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2041 ],
+"gdenamk": [ "Saint-Aubin (FR)" ],
+"anz_r": [ 14 ],
+"id": [ "2041" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2044": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2044 ],
+"gdenamk": [ "Surpierre" ],
+"anz_r": [ 5 ],
+"id": [ "2044" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2045": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2045 ],
+"gdenamk": [ "Vallon" ],
+"anz_r": [ 20 ],
+"id": [ "2045" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2047": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2047 ],
+"gdenamk": [ "Villeneuve (FR)" ],
+"anz_r": [ 4 ],
+"id": [ "2047" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2049": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2049 ],
+"gdenamk": [ "Vuissens" ],
+"anz_r": [ 6 ],
+"id": [ "2049" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2050": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2050 ],
+"gdenamk": [ "Les Montets" ],
+"anz_r": [ 27 ],
+"id": [ "2050" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2051": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2051 ],
+"gdenamk": [ "Delley-Portalban" ],
+"anz_r": [ 33 ],
+"id": [ "2051" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2052": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2052 ],
+"gdenamk": [ "Vernay" ],
+"anz_r": [ 15 ],
+"id": [ "2052" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2061": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2061 ],
+"gdenamk": [ "Auboranges" ],
+"anz_r": [ 29 ],
+"id": [ "2061" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2063": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2063 ],
+"gdenamk": [ "Billens-Hennens" ],
+"anz_r": [ 6 ],
+"id": [ "2063" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2067": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2067 ],
+"gdenamk": [ "Le Châtelard" ],
+"anz_r": [ 4 ],
+"id": [ "2067" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2068": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2068 ],
+"gdenamk": [ "Châtonnaye" ],
+"anz_r": [ 14 ],
+"id": [ "2068" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2079": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2079 ],
+"gdenamk": [ "Grangettes" ],
+"anz_r": [ 2 ],
+"id": [ "2079" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2086": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2086 ],
+"gdenamk": [ "Massonnens" ],
+"anz_r": [ 15 ],
+"id": [ "2086" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2087": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2087 ],
+"gdenamk": [ "Mézières (FR)" ],
+"anz_r": [ 9 ],
+"id": [ "2087" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2089": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2089 ],
+"gdenamk": [ "Montet (Glâne)" ],
+"anz_r": [ 16 ],
+"id": [ "2089" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2096": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2096 ],
+"gdenamk": [ "Romont (FR)" ],
+"anz_r": [ 72 ],
+"id": [ "2096" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2097": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2097 ],
+"gdenamk": [ "Rue" ],
+"anz_r": [ 16 ],
+"id": [ "2097" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2099": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2099 ],
+"gdenamk": [ "Siviriez" ],
+"anz_r": [ 28 ],
+"id": [ "2099" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2102": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2102 ],
+"gdenamk": [ "Ursy" ],
+"anz_r": [ 27 ],
+"id": [ "2102" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2113": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2113 ],
+"gdenamk": [ "Vuisternens-dev-Romont" ],
+"anz_r": [ 17 ],
+"id": [ "2113" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2114": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2114 ],
+"gdenamk": [ "Villorsonnens" ],
+"anz_r": [ 25 ],
+"id": [ "2114" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2115": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2115 ],
+"gdenamk": [ "Torny" ],
+"anz_r": [ 11 ],
+"id": [ "2115" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2116": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2116 ],
+"gdenamk": [ "La Folliaz" ],
+"anz_r": [ 35 ],
+"id": [ "2116" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2121": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2121 ],
+"gdenamk": [ "Haut-Intyamon" ],
+"anz_r": [ 40 ],
+"id": [ "2121" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2122": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2122 ],
+"gdenamk": [ "Pont-en-Ogoz" ],
+"anz_r": [ 32 ],
+"id": [ "2122" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2123": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2123 ],
+"gdenamk": [ "Botterens" ],
+"anz_r": [ 12 ],
+"id": [ "2123" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2124": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2124 ],
+"gdenamk": [ "Broc" ],
+"anz_r": [ 71 ],
+"id": [ "2124" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2125": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2125 ],
+"gdenamk": [ "Bulle" ],
+"anz_r": [ 448 ],
+"id": [ "2125" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2128": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2128 ],
+"gdenamk": [ "Châtel-sur-Montsalvens" ],
+"anz_r": [ 22 ],
+"id": [ "2128" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2129": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2129 ],
+"gdenamk": [ "Corbières" ],
+"anz_r": [ 10 ],
+"id": [ "2129" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2131": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2131 ],
+"gdenamk": [ "Echarlens" ],
+"anz_r": [ 12 ],
+"id": [ "2131" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2134": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2134 ],
+"gdenamk": [ "Grandvillard" ],
+"anz_r": [ 36 ],
+"id": [ "2134" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2135": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2135 ],
+"gdenamk": [ "Gruyères" ],
+"anz_r": [ 119 ],
+"id": [ "2135" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2137": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2137 ],
+"gdenamk": [ "Hauteville" ],
+"anz_r": [ 14 ],
+"id": [ "2137" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2138": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2138 ],
+"gdenamk": [ "Jaun" ],
+"anz_r": [ 10 ],
+"id": [ "2138" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2140": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2140 ],
+"gdenamk": [ "Marsens" ],
+"anz_r": [ 51 ],
+"id": [ "2140" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2143": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2143 ],
+"gdenamk": [ "Morlon" ],
+"anz_r": [ 10 ],
+"id": [ "2143" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2145": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2145 ],
+"gdenamk": [ "Le Pâquier (FR)" ],
+"anz_r": [ 26 ],
+"id": [ "2145" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2147": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2147 ],
+"gdenamk": [ "Pont-la-Ville" ],
+"anz_r": [ 22 ],
+"id": [ "2147" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2148": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2148 ],
+"gdenamk": [ "Riaz" ],
+"anz_r": [ 57 ],
+"id": [ "2148" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2149": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2149 ],
+"gdenamk": [ "La Roche" ],
+"anz_r": [ 39 ],
+"id": [ "2149" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2152": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2152 ],
+"gdenamk": [ "Sâles" ],
+"anz_r": [ 15 ],
+"id": [ "2152" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2153": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2153 ],
+"gdenamk": [ "Sorens" ],
+"anz_r": [ 32 ],
+"id": [ "2153" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2155": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2155 ],
+"gdenamk": [ "Vaulruz" ],
+"anz_r": [ 18 ],
+"id": [ "2155" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2160": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2160 ],
+"gdenamk": [ "Vuadens" ],
+"anz_r": [ 73 ],
+"id": [ "2160" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2162": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2162 ],
+"gdenamk": [ "Bas-Intyamon" ],
+"anz_r": [ 45 ],
+"id": [ "2162" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2163": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2163 ],
+"gdenamk": [ "Val-de-Charmey" ],
+"anz_r": [ 84 ],
+"id": [ "2163" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2171": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2171 ],
+"gdenamk": [ "Arconciel" ],
+"anz_r": [ 10 ],
+"id": [ "2171" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2172": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2172 ],
+"gdenamk": [ "Autafond" ],
+"anz_r": [ 112 ],
+"id": [ "2172" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2173": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2173 ],
+"gdenamk": [ "Autigny" ],
+"anz_r": [ 16 ],
+"id": [ "2173" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2174": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2174 ],
+"gdenamk": [ "Avry" ],
+"anz_r": [ 45 ],
+"id": [ "2174" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2177": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2177 ],
+"gdenamk": [ "Chénens" ],
+"anz_r": [ 19 ],
+"id": [ "2177" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2179": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2179 ],
+"gdenamk": [ "Chésopelloz" ],
+"anz_r": [ 76 ],
+"id": [ "2179" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2184": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2184 ],
+"gdenamk": [ "Corpataux-Magnedens" ],
+"anz_r": [ 25 ],
+"id": [ "2184" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2185": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2185 ],
+"gdenamk": [ "Corserey" ],
+"anz_r": [ 7 ],
+"id": [ "2185" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2186": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2186 ],
+"gdenamk": [ "Cottens (FR)" ],
+"anz_r": [ 58 ],
+"id": [ "2186" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2189": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2189 ],
+"gdenamk": [ "Ependes (FR)" ],
+"anz_r": [ 25 ],
+"id": [ "2189" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2192": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2192 ],
+"gdenamk": [ "Farvagny" ],
+"anz_r": [ 36 ],
+"id": [ "2192" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2196": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2196 ],
+"gdenamk": [ "Fribourg" ],
+"anz_r": [ 1293 ],
+"id": [ "2196" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2197": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2197 ],
+"gdenamk": [ "Givisiez" ],
+"anz_r": [ 224 ],
+"id": [ "2197" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2200": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2200 ],
+"gdenamk": [ "Grolley" ],
+"anz_r": [ 96 ],
+"id": [ "2200" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2206": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2206 ],
+"gdenamk": [ "Marly" ],
+"anz_r": [ 237 ],
+"id": [ "2206" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2208": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2208 ],
+"gdenamk": [ "Matran" ],
+"anz_r": [ 39 ],
+"id": [ "2208" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2211": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2211 ],
+"gdenamk": [ "Neyruz (FR)" ],
+"anz_r": [ 48 ],
+"id": [ "2211" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2213": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2213 ],
+"gdenamk": [ "Noréaz" ],
+"anz_r": [ 20 ],
+"id": [ "2213" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2220": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2220 ],
+"gdenamk": [ "Le Mouret" ],
+"anz_r": [ 65 ],
+"id": [ "2220" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2221": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2221 ],
+"gdenamk": [ "Prez-vers-Noréaz" ],
+"anz_r": [ 26 ],
+"id": [ "2221" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2222": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2222 ],
+"gdenamk": [ "Rossens (FR)" ],
+"anz_r": [ 25 ],
+"id": [ "2222" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2223": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2223 ],
+"gdenamk": [ "Le Glèbe" ],
+"anz_r": [ 22 ],
+"id": [ "2223" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2226": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2226 ],
+"gdenamk": [ "Treyvaux" ],
+"anz_r": [ 17 ],
+"id": [ "2226" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2228": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2228 ],
+"gdenamk": [ "Villars-sur-Glâne" ],
+"anz_r": [ 348 ],
+"id": [ "2228" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2231": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2231 ],
+"gdenamk": [ "Vuisternens-en-Ogoz" ],
+"anz_r": [ 14 ],
+"id": [ "2231" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2233": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2233 ],
+"gdenamk": [ "Hauterive (FR)" ],
+"anz_r": [ 56 ],
+"id": [ "2233" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2234": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2234 ],
+"gdenamk": [ "La Brillaz" ],
+"anz_r": [ 47 ],
+"id": [ "2234" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2243": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2243 ],
+"gdenamk": [ "Barberêche" ],
+"anz_r": [ 6 ],
+"id": [ "2243" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2250": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2250 ],
+"gdenamk": [ "Courgevaux" ],
+"anz_r": [ 21 ],
+"id": [ "2250" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2251": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2251 ],
+"gdenamk": [ "Courlevon" ],
+"anz_r": [ 4 ],
+"id": [ "2251" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2254": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2254 ],
+"gdenamk": [ "Courtepin" ],
+"anz_r": [ 76 ],
+"id": [ "2254" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2257": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2257 ],
+"gdenamk": [ "Cressier (FR)" ],
+"anz_r": [ 21 ],
+"id": [ "2257" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2258": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2258 ],
+"gdenamk": [ "Fraeschels" ],
+"anz_r": [ 11 ],
+"id": [ "2258" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2259": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2259 ],
+"gdenamk": [ "Galmiz" ],
+"anz_r": [ 9 ],
+"id": [ "2259" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2262": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2262 ],
+"gdenamk": [ "Gurmels" ],
+"anz_r": [ 39 ],
+"id": [ "2262" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2264": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2264 ],
+"gdenamk": [ "Jeuss" ],
+"anz_r": [ 3 ],
+"id": [ "2264" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2265": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2265 ],
+"gdenamk": [ "Kerzers" ],
+"anz_r": [ 83 ],
+"id": [ "2265" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2266": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2266 ],
+"gdenamk": [ "Kleinboesingen" ],
+"anz_r": [ 16 ],
+"id": [ "2266" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2272": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2272 ],
+"gdenamk": [ "Misery-Courtion" ],
+"anz_r": [ 37 ],
+"id": [ "2272" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2274": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2274 ],
+"gdenamk": [ "Muntelier" ],
+"anz_r": [ 19 ],
+"id": [ "2274" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2275": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2275 ],
+"gdenamk": [ "Murten" ],
+"anz_r": [ 188 ],
+"id": [ "2275" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2276": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2276 ],
+"gdenamk": [ "Ried bei Kerzers" ],
+"anz_r": [ 15 ],
+"id": [ "2276" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2277": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2277 ],
+"gdenamk": [ "Salvenach" ],
+"anz_r": [ 8 ],
+"id": [ "2277" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2278": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2278 ],
+"gdenamk": [ "Ulmiz" ],
+"anz_r": [ 10 ],
+"id": [ "2278" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2279": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2279 ],
+"gdenamk": [ "Villarepos" ],
+"anz_r": [ 19 ],
+"id": [ "2279" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2280": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2280 ],
+"gdenamk": [ "Bas-Vully" ],
+"anz_r": [ 158 ],
+"id": [ "2280" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2281": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2281 ],
+"gdenamk": [ "Haut-Vully" ],
+"anz_r": [ 47 ],
+"id": [ "2281" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2291": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2291 ],
+"gdenamk": [ "Alterswil" ],
+"anz_r": [ 237 ],
+"id": [ "2291" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2292": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2292 ],
+"gdenamk": [ "Bruenisried" ],
+"anz_r": [ 18 ],
+"id": [ "2292" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2293": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2293 ],
+"gdenamk": [ "Duedingen" ],
+"anz_r": [ 230 ],
+"id": [ "2293" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2294": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2294 ],
+"gdenamk": [ "Giffers" ],
+"anz_r": [ 49 ],
+"id": [ "2294" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2295": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2295 ],
+"gdenamk": [ "Boesingen" ],
+"anz_r": [ 132 ],
+"id": [ "2295" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2296": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2296 ],
+"gdenamk": [ "Heitenried" ],
+"anz_r": [ 33 ],
+"id": [ "2296" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2298": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2298 ],
+"gdenamk": [ "Oberschrot" ],
+"anz_r": [ 126 ],
+"id": [ "2298" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2300": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2300 ],
+"gdenamk": [ "Plasselb" ],
+"anz_r": [ 54 ],
+"id": [ "2300" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2301": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2301 ],
+"gdenamk": [ "Rechthalten" ],
+"anz_r": [ 17 ],
+"id": [ "2301" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2302": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2302 ],
+"gdenamk": [ "St. Antoni" ],
+"anz_r": [ 47 ],
+"id": [ "2302" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2303": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2303 ],
+"gdenamk": [ "St. Silvester" ],
+"anz_r": [ 16 ],
+"id": [ "2303" ],
+"fillKey": [ "(11,16]" ] 
+},
+"2304": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2304 ],
+"gdenamk": [ "St. Ursen" ],
+"anz_r": [ 21 ],
+"id": [ "2304" ],
+"fillKey": [ "(16,21]" ] 
+},
+"2305": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2305 ],
+"gdenamk": [ "Schmitten (FR)" ],
+"anz_r": [ 143 ],
+"id": [ "2305" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2307": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2307 ],
+"gdenamk": [ "Tentlingen" ],
+"anz_r": [ 46 ],
+"id": [ "2307" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2308": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2308 ],
+"gdenamk": [ "Ueberstorf" ],
+"anz_r": [ 38 ],
+"id": [ "2308" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2309": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2309 ],
+"gdenamk": [ "Wuennewil-Flamatt" ],
+"anz_r": [ 128 ],
+"id": [ "2309" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2321": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2321 ],
+"gdenamk": [ "Attalens" ],
+"anz_r": [ 74 ],
+"id": [ "2321" ],
+"fillKey": [ "(56,112]" ] 
+},
+"2323": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2323 ],
+"gdenamk": [ "Bossonnens" ],
+"anz_r": [ 32 ],
+"id": [ "2323" ],
+"fillKey": [ "(27,39]" ] 
+},
+"2325": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2325 ],
+"gdenamk": [ "Châtel-Saint-Denis" ],
+"anz_r": [ 199 ],
+"id": [ "2325" ],
+"fillKey": [ "(112,1.29e+03]" ] 
+},
+"2328": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2328 ],
+"gdenamk": [ "Granges (Veveyse)" ],
+"anz_r": [ 11 ],
+"id": [ "2328" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2333": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2333 ],
+"gdenamk": [ "Remaufens" ],
+"anz_r": [ 40 ],
+"id": [ "2333" ],
+"fillKey": [ "(39,56]" ] 
+},
+"2335": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2335 ],
+"gdenamk": [ "Saint-Martin (FR)" ],
+"anz_r": [ 11 ],
+"id": [ "2335" ],
+"fillKey": [ "(9,11]" ] 
+},
+"2336": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2336 ],
+"gdenamk": [ "Semsales" ],
+"anz_r": [ 24 ],
+"id": [ "2336" ],
+"fillKey": [ "(21,27]" ] 
+},
+"2337": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2337 ],
+"gdenamk": [ "Le Flon" ],
+"anz_r": [ 9 ],
+"id": [ "2337" ],
+"fillKey": [ "(1,9]" ] 
+},
+"2338": {
+ "ktkz": [ "fr" ],
+"gdenr": [ 2338 ],
+"gdenamk": [ "La Verrerie" ],
+"anz_r": [ 23 ],
+"id": [ "2338" ],
+"fillKey": [ "(21,27]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/fr-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'index.html';});
+                   } ,
+"id": "chart470c6e595561" 
+}
+  chartParams.element = document.getElementById('chart470c6e595561')
+  
+  
+  var mapchart470c6e595561 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c6e595561.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c6e595561.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c6e595561.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

@@ -1,0 +1,534 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c19e312fe' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c19e312fe",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(2,5]": "#F7FBFF",
+"(5,10.3]": "#DEEBF7",
+"(10.3,12]": "#C6DBEF",
+"(12,15]": "#9ECAE1",
+"(15,31.3]": "#6BAED6",
+"(31.3,47]": "#4292C6",
+"(47,67.3]": "#2171B5",
+"(67.3,112]": "#08519C",
+"(112,390]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "6702": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6702 ],
+"gdenamk": [ "Boécourt" ],
+"anz_r": [ 56 ],
+"id": [ "6702" ],
+"fillKey": [ "(47,67.3]" ] 
+},
+"6703": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6703 ],
+"gdenamk": [ "Bourrignon" ],
+"anz_r": [ 7 ],
+"id": [ "6703" ],
+"fillKey": [ "(5,10.3]" ] 
+},
+"6704": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6704 ],
+"gdenamk": [ "Châtillon (JU)" ],
+"anz_r": [ 16 ],
+"id": [ "6704" ],
+"fillKey": [ "(15,31.3]" ] 
+},
+"6705": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6705 ],
+"gdenamk": [ "Corban" ],
+"anz_r": [ 11 ],
+"id": [ "6705" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6706": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6706 ],
+"gdenamk": [ "Courchapoix" ],
+"anz_r": [ 15 ],
+"id": [ "6706" ],
+"fillKey": [ "(12,15]" ] 
+},
+"6708": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6708 ],
+"gdenamk": [ "Courrendlin" ],
+"anz_r": [ 151 ],
+"id": [ "6708" ],
+"fillKey": [ "(112,390]" ] 
+},
+"6709": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6709 ],
+"gdenamk": [ "Courroux" ],
+"anz_r": [ 166 ],
+"id": [ "6709" ],
+"fillKey": [ "(112,390]" ] 
+},
+"6710": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6710 ],
+"gdenamk": [ "Courtételle" ],
+"anz_r": [ 62 ],
+"id": [ "6710" ],
+"fillKey": [ "(47,67.3]" ] 
+},
+"6711": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6711 ],
+"gdenamk": [ "Delémont" ],
+"anz_r": [ 390 ],
+"id": [ "6711" ],
+"fillKey": [ "(112,390]" ] 
+},
+"6712": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6712 ],
+"gdenamk": [ "Develier" ],
+"anz_r": [ 37 ],
+"id": [ "6712" ],
+"fillKey": [ "(31.3,47]" ] 
+},
+"6713": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6713 ],
+"gdenamk": [ "Ederswiler" ],
+"anz_r": [ 4 ],
+"id": [ "6713" ],
+"fillKey": [ "(2,5]" ] 
+},
+"6715": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6715 ],
+"gdenamk": [ "Mervelier" ],
+"anz_r": [ 59 ],
+"id": [ "6715" ],
+"fillKey": [ "(47,67.3]" ] 
+},
+"6716": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6716 ],
+"gdenamk": [ "Mettembert" ],
+"anz_r": [ 5 ],
+"id": [ "6716" ],
+"fillKey": [ "(2,5]" ] 
+},
+"6718": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6718 ],
+"gdenamk": [ "Movelier" ],
+"anz_r": [ 15 ],
+"id": [ "6718" ],
+"fillKey": [ "(12,15]" ] 
+},
+"6720": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6720 ],
+"gdenamk": [ "Rebeuvelier" ],
+"anz_r": [ 11 ],
+"id": [ "6720" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6721": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6721 ],
+"gdenamk": [ "Rossemaison" ],
+"anz_r": [ 13 ],
+"id": [ "6721" ],
+"fillKey": [ "(12,15]" ] 
+},
+"6722": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6722 ],
+"gdenamk": [ "Saulcy" ],
+"anz_r": [ 2 ],
+"id": [ "6722" ],
+"fillKey": [ null ] 
+},
+"6729": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6729 ],
+"gdenamk": [ "Haute-Sorne" ],
+"anz_r": [ 288 ],
+"id": [ "6729" ],
+"fillKey": [ "(112,390]" ] 
+},
+"6730": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6730 ],
+"gdenamk": [ "Val Terbi" ],
+"anz_r": [ 84 ],
+"id": [ "6730" ],
+"fillKey": [ "(67.3,112]" ] 
+},
+"6741": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6741 ],
+"gdenamk": [ "Le Bémont (JU)" ],
+"anz_r": [ 12 ],
+"id": [ "6741" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6742": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6742 ],
+"gdenamk": [ "Les Bois" ],
+"anz_r": [ 37 ],
+"id": [ "6742" ],
+"fillKey": [ "(31.3,47]" ] 
+},
+"6744": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6744 ],
+"gdenamk": [ "La Chaux-des-Breuleux" ],
+"anz_r": [ 55 ],
+"id": [ "6744" ],
+"fillKey": [ "(47,67.3]" ] 
+},
+"6745": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6745 ],
+"gdenamk": [ "Les Enfers" ],
+"anz_r": [ 5 ],
+"id": [ "6745" ],
+"fillKey": [ "(2,5]" ] 
+},
+"6748": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6748 ],
+"gdenamk": [ "Les Genevez (JU)" ],
+"anz_r": [ 16 ],
+"id": [ "6748" ],
+"fillKey": [ "(15,31.3]" ] 
+},
+"6750": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6750 ],
+"gdenamk": [ "Lajoux (JU)" ],
+"anz_r": [ 9 ],
+"id": [ "6750" ],
+"fillKey": [ "(5,10.3]" ] 
+},
+"6751": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6751 ],
+"gdenamk": [ "Montfaucon" ],
+"anz_r": [ 23 ],
+"id": [ "6751" ],
+"fillKey": [ "(15,31.3]" ] 
+},
+"6753": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6753 ],
+"gdenamk": [ "Muriaux" ],
+"anz_r": [ 11 ],
+"id": [ "6753" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6754": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6754 ],
+"gdenamk": [ "Le Noirmont" ],
+"anz_r": [ 111 ],
+"id": [ "6754" ],
+"fillKey": [ "(67.3,112]" ] 
+},
+"6757": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6757 ],
+"gdenamk": [ "Saignelégier" ],
+"anz_r": [ 91 ],
+"id": [ "6757" ],
+"fillKey": [ "(67.3,112]" ] 
+},
+"6758": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6758 ],
+"gdenamk": [ "Saint-Brais" ],
+"anz_r": [ 10 ],
+"id": [ "6758" ],
+"fillKey": [ "(5,10.3]" ] 
+},
+"6759": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6759 ],
+"gdenamk": [ "Soubey" ],
+"anz_r": [ 11 ],
+"id": [ "6759" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6771": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6771 ],
+"gdenamk": [ "Alle" ],
+"anz_r": [ 47 ],
+"id": [ "6771" ],
+"fillKey": [ "(31.3,47]" ] 
+},
+"6773": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6773 ],
+"gdenamk": [ "Beurnevésin" ],
+"anz_r": [ 3 ],
+"id": [ "6773" ],
+"fillKey": [ "(2,5]" ] 
+},
+"6774": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6774 ],
+"gdenamk": [ "Boncourt" ],
+"anz_r": [ 114 ],
+"id": [ "6774" ],
+"fillKey": [ "(112,390]" ] 
+},
+"6775": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6775 ],
+"gdenamk": [ "Bonfol" ],
+"anz_r": [ 12 ],
+"id": [ "6775" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6778": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6778 ],
+"gdenamk": [ "Bure" ],
+"anz_r": [ 15 ],
+"id": [ "6778" ],
+"fillKey": [ "(12,15]" ] 
+},
+"6781": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6781 ],
+"gdenamk": [ "Coeuve" ],
+"anz_r": [ 11 ],
+"id": [ "6781" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6782": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6782 ],
+"gdenamk": [ "Cornol" ],
+"anz_r": [ 70 ],
+"id": [ "6782" ],
+"fillKey": [ "(67.3,112]" ] 
+},
+"6783": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6783 ],
+"gdenamk": [ "Courchavon" ],
+"anz_r": [ 2 ],
+"id": [ "6783" ],
+"fillKey": [ null ] 
+},
+"6784": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6784 ],
+"gdenamk": [ "Courgenay" ],
+"anz_r": [ 83 ],
+"id": [ "6784" ],
+"fillKey": [ "(67.3,112]" ] 
+},
+"6785": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6785 ],
+"gdenamk": [ "Courtedoux" ],
+"anz_r": [ 12 ],
+"id": [ "6785" ],
+"fillKey": [ "(10.3,12]" ] 
+},
+"6787": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6787 ],
+"gdenamk": [ "Damphreux" ],
+"anz_r": [ 8 ],
+"id": [ "6787" ],
+"fillKey": [ "(5,10.3]" ] 
+},
+"6789": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6789 ],
+"gdenamk": [ "Fahy" ],
+"anz_r": [ 9 ],
+"id": [ "6789" ],
+"fillKey": [ "(5,10.3]" ] 
+},
+"6790": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6790 ],
+"gdenamk": [ "Fontenais" ],
+"anz_r": [ 45 ],
+"id": [ "6790" ],
+"fillKey": [ "(31.3,47]" ] 
+},
+"6792": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6792 ],
+"gdenamk": [ "Grandfontaine" ],
+"anz_r": [ 13 ],
+"id": [ "6792" ],
+"fillKey": [ "(12,15]" ] 
+},
+"6800": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6800 ],
+"gdenamk": [ "Porrentruy" ],
+"anz_r": [ 198 ],
+"id": [ "6800" ],
+"fillKey": [ "(112,390]" ] 
+},
+"6803": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6803 ],
+"gdenamk": [ "Rocourt" ],
+"anz_r": [ 2 ],
+"id": [ "6803" ],
+"fillKey": [ null ] 
+},
+"6806": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6806 ],
+"gdenamk": [ "Vendlincourt" ],
+"anz_r": [ 30 ],
+"id": [ "6806" ],
+"fillKey": [ "(15,31.3]" ] 
+},
+"6807": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6807 ],
+"gdenamk": [ "Basse-Allaine" ],
+"anz_r": [ 39 ],
+"id": [ "6807" ],
+"fillKey": [ "(31.3,47]" ] 
+},
+"6808": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6808 ],
+"gdenamk": [ "Clos du Doubs" ],
+"anz_r": [ 81 ],
+"id": [ "6808" ],
+"fillKey": [ "(67.3,112]" ] 
+},
+"6809": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6809 ],
+"gdenamk": [ "Haute-Ajoie" ],
+"anz_r": [ 34 ],
+"id": [ "6809" ],
+"fillKey": [ "(31.3,47]" ] 
+},
+"6810": {
+ "ktkz": [ "ju" ],
+"gdenr": [ 6810 ],
+"gdenamk": [ "La Baroche" ],
+"anz_r": [ 60 ],
+"id": [ "6810" ],
+"fillKey": [ "(47,67.3]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/ju-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'index.html';});
+                   } ,
+"id": "chart470c19e312fe" 
+}
+  chartParams.element = document.getElementById('chart470c19e312fe')
+  
+  
+  var mapchart470c19e312fe = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c19e312fe.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c19e312fe.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c19e312fe.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

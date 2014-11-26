@@ -1,0 +1,1118 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    <script src='js/d3.v3.min.js' type='text/javascript'></script>
+    <script src='js/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='js/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='js/handlebars.min.js' type='text/javascript'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100%px;
+      height: 1000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart470c6595633a' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart470c6595633a",
+"width": "100%",
+"height":   1000,
+"scope": "municipalities",
+"fills": {
+ "(4,36]": "#F7FBFF",
+"(36,57.7]": "#DEEBF7",
+"(57.7,70]": "#C6DBEF",
+"(70,82]": "#9ECAE1",
+"(82,131]": "#6BAED6",
+"(131,168]": "#4292C6",
+"(168,259]": "#2171B5",
+"(259,412]": "#08519C",
+"(412,1.58e+03]": "#08306B" 
+},
+"legend": true,
+"labels": true,
+"data": {
+ "5001": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5001 ],
+"gdenamk": [ "Arbedo-Castione" ],
+"anz_r": [ 251 ],
+"id": [ "5001" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5002": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5002 ],
+"gdenamk": [ "Bellinzona" ],
+"anz_r": [ 759 ],
+"id": [ "5002" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5003": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5003 ],
+"gdenamk": [ "Cadenazzo" ],
+"anz_r": [ 172 ],
+"id": [ "5003" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5004": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5004 ],
+"gdenamk": [ "Camorino" ],
+"anz_r": [ 213 ],
+"id": [ "5004" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5005": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5005 ],
+"gdenamk": [ "Giubiasco" ],
+"anz_r": [ 548 ],
+"id": [ "5005" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5006": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5006 ],
+"gdenamk": [ "Gnosca" ],
+"anz_r": [ 66 ],
+"id": [ "5006" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5007": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5007 ],
+"gdenamk": [ "Gorduno" ],
+"anz_r": [ 78 ],
+"id": [ "5007" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5008": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5008 ],
+"gdenamk": [ "Gudo" ],
+"anz_r": [ 116 ],
+"id": [ "5008" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5009": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5009 ],
+"gdenamk": [ "Isone" ],
+"anz_r": [ 108 ],
+"id": [ "5009" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5010": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5010 ],
+"gdenamk": [ "Lumino" ],
+"anz_r": [ 103 ],
+"id": [ "5010" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5012": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5012 ],
+"gdenamk": [ "Moleno" ],
+"anz_r": [ 5 ],
+"id": [ "5012" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5013": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5013 ],
+"gdenamk": [ "Monte Carasso" ],
+"anz_r": [ 515 ],
+"id": [ "5013" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5015": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5015 ],
+"gdenamk": [ "Preonzo" ],
+"anz_r": [ 59 ],
+"id": [ "5015" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5017": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5017 ],
+"gdenamk": [ "Sant'Antonino" ],
+"anz_r": [ 134 ],
+"id": [ "5017" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5018": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5018 ],
+"gdenamk": [ "Sant'Antonio" ],
+"anz_r": [ 78 ],
+"id": [ "5018" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5019": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5019 ],
+"gdenamk": [ "Sementina" ],
+"anz_r": [ 386 ],
+"id": [ "5019" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5048": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5048 ],
+"gdenamk": [ "Acquarossa" ],
+"anz_r": [ 349 ],
+"id": [ "5048" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5049": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5049 ],
+"gdenamk": [ "Blenio" ],
+"anz_r": [ 344 ],
+"id": [ "5049" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5050": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5050 ],
+"gdenamk": [ "Serravalle" ],
+"anz_r": [ 325 ],
+"id": [ "5050" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5061": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5061 ],
+"gdenamk": [ "Airolo" ],
+"anz_r": [ 369 ],
+"id": [ "5061" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5063": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5063 ],
+"gdenamk": [ "Bedretto" ],
+"anz_r": [ 38 ],
+"id": [ "5063" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5064": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5064 ],
+"gdenamk": [ "Bodio" ],
+"anz_r": [ 156 ],
+"id": [ "5064" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5071": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5071 ],
+"gdenamk": [ "Dalpe" ],
+"anz_r": [ 55 ],
+"id": [ "5071" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5072": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5072 ],
+"gdenamk": [ "Faido" ],
+"anz_r": [ 645 ],
+"id": [ "5072" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5073": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5073 ],
+"gdenamk": [ "Giornico" ],
+"anz_r": [ 84 ],
+"id": [ "5073" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5076": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5076 ],
+"gdenamk": [ "Personico" ],
+"anz_r": [ 54 ],
+"id": [ "5076" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5077": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5077 ],
+"gdenamk": [ "Pollegio" ],
+"anz_r": [ 72 ],
+"id": [ "5077" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5078": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5078 ],
+"gdenamk": [ "Prato (Leventina)" ],
+"anz_r": [ 49 ],
+"id": [ "5078" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5079": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5079 ],
+"gdenamk": [ "Quinto" ],
+"anz_r": [ 234 ],
+"id": [ "5079" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5091": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5091 ],
+"gdenamk": [ "Ascona" ],
+"anz_r": [ 454 ],
+"id": [ "5091" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5095": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5095 ],
+"gdenamk": [ "Brione (Verzasca)" ],
+"anz_r": [ 54 ],
+"id": [ "5095" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5096": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5096 ],
+"gdenamk": [ "Brione sopra Minusio" ],
+"anz_r": [ 133 ],
+"id": [ "5096" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5097": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5097 ],
+"gdenamk": [ "Brissago" ],
+"anz_r": [ 250 ],
+"id": [ "5097" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5102": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5102 ],
+"gdenamk": [ "Corippo" ],
+"anz_r": [ 4 ],
+"id": [ "5102" ],
+"fillKey": [ null ] 
+},
+"5105": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5105 ],
+"gdenamk": [ "Frasco" ],
+"anz_r": [ 70 ],
+"id": [ "5105" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5108": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5108 ],
+"gdenamk": [ "Gordola" ],
+"anz_r": [ 373 ],
+"id": [ "5108" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5112": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5112 ],
+"gdenamk": [ "Lavertezzo" ],
+"anz_r": [ 36 ],
+"id": [ "5112" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5113": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5113 ],
+"gdenamk": [ "Locarno" ],
+"anz_r": [ 994 ],
+"id": [ "5113" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5115": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5115 ],
+"gdenamk": [ "Losone" ],
+"anz_r": [ 545 ],
+"id": [ "5115" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5117": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5117 ],
+"gdenamk": [ "Mergoscia" ],
+"anz_r": [ 47 ],
+"id": [ "5117" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5118": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5118 ],
+"gdenamk": [ "Minusio" ],
+"anz_r": [ 527 ],
+"id": [ "5118" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5121": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5121 ],
+"gdenamk": [ "Orselina" ],
+"anz_r": [ 90 ],
+"id": [ "5121" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5125": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5125 ],
+"gdenamk": [ "Ronco sopra Ascona" ],
+"anz_r": [ 173 ],
+"id": [ "5125" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5129": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5129 ],
+"gdenamk": [ "Sonogno" ],
+"anz_r": [ 36 ],
+"id": [ "5129" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5131": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5131 ],
+"gdenamk": [ "Tenero-Contra" ],
+"anz_r": [ 192 ],
+"id": [ "5131" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5132": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5132 ],
+"gdenamk": [ "Vergeletto" ],
+"anz_r": [ 10 ],
+"id": [ "5132" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5135": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5135 ],
+"gdenamk": [ "Vogorno" ],
+"anz_r": [ 71 ],
+"id": [ "5135" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5136": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5136 ],
+"gdenamk": [ "Onsernone" ],
+"anz_r": [ 149 ],
+"id": [ "5136" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5137": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5137 ],
+"gdenamk": [ "Isorno" ],
+"anz_r": [ 68 ],
+"id": [ "5137" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5138": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5138 ],
+"gdenamk": [ "Cugnasco-Gerra" ],
+"anz_r": [ 400 ],
+"id": [ "5138" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5141": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5141 ],
+"gdenamk": [ "Agno" ],
+"anz_r": [ 220 ],
+"id": [ "5141" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5143": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5143 ],
+"gdenamk": [ "Aranno" ],
+"anz_r": [ 24 ],
+"id": [ "5143" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5144": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5144 ],
+"gdenamk": [ "Arogno" ],
+"anz_r": [ 62 ],
+"id": [ "5144" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5146": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5146 ],
+"gdenamk": [ "Astano" ],
+"anz_r": [ 49 ],
+"id": [ "5146" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5148": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5148 ],
+"gdenamk": [ "Bedano" ],
+"anz_r": [ 70 ],
+"id": [ "5148" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5149": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5149 ],
+"gdenamk": [ "Bedigliora" ],
+"anz_r": [ 94 ],
+"id": [ "5149" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5151": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5151 ],
+"gdenamk": [ "Bioggio" ],
+"anz_r": [ 159 ],
+"id": [ "5151" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5154": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5154 ],
+"gdenamk": [ "Bissone" ],
+"anz_r": [ 75 ],
+"id": [ "5154" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5160": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5160 ],
+"gdenamk": [ "Brusino Arsizio" ],
+"anz_r": [ 93 ],
+"id": [ "5160" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5161": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5161 ],
+"gdenamk": [ "Cademario" ],
+"anz_r": [ 42 ],
+"id": [ "5161" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5162": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5162 ],
+"gdenamk": [ "Cadempino" ],
+"anz_r": [ 107 ],
+"id": [ "5162" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5167": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5167 ],
+"gdenamk": [ "Canobbio" ],
+"anz_r": [ 80 ],
+"id": [ "5167" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5171": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5171 ],
+"gdenamk": [ "Caslano" ],
+"anz_r": [ 311 ],
+"id": [ "5171" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5176": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5176 ],
+"gdenamk": [ "Comano" ],
+"anz_r": [ 92 ],
+"id": [ "5176" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5178": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5178 ],
+"gdenamk": [ "Croglio" ],
+"anz_r": [ 77 ],
+"id": [ "5178" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5180": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5180 ],
+"gdenamk": [ "Cureglia" ],
+"anz_r": [ 70 ],
+"id": [ "5180" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5181": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5181 ],
+"gdenamk": [ "Curio" ],
+"anz_r": [ 149 ],
+"id": [ "5181" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5186": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5186 ],
+"gdenamk": [ "Grancia" ],
+"anz_r": [ 19 ],
+"id": [ "5186" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5187": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5187 ],
+"gdenamk": [ "Gravesano" ],
+"anz_r": [ 47 ],
+"id": [ "5187" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5192": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5192 ],
+"gdenamk": [ "Lugano" ],
+"anz_r": [ 1580 ],
+"id": [ "5192" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5193": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5193 ],
+"gdenamk": [ "Magliaso" ],
+"anz_r": [ 86 ],
+"id": [ "5193" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5194": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5194 ],
+"gdenamk": [ "Manno" ],
+"anz_r": [ 56 ],
+"id": [ "5194" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5195": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5195 ],
+"gdenamk": [ "Maroggia" ],
+"anz_r": [ 62 ],
+"id": [ "5195" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5197": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5197 ],
+"gdenamk": [ "Melano" ],
+"anz_r": [ 81 ],
+"id": [ "5197" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5198": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5198 ],
+"gdenamk": [ "Melide" ],
+"anz_r": [ 62 ],
+"id": [ "5198" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5199": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5199 ],
+"gdenamk": [ "Mezzovico-Vira" ],
+"anz_r": [ 158 ],
+"id": [ "5199" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5202": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5202 ],
+"gdenamk": [ "Monteggio" ],
+"anz_r": [ 59 ],
+"id": [ "5202" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5203": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5203 ],
+"gdenamk": [ "Morcote" ],
+"anz_r": [ 82 ],
+"id": [ "5203" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5205": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5205 ],
+"gdenamk": [ "Muzzano" ],
+"anz_r": [ 35 ],
+"id": [ "5205" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5206": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5206 ],
+"gdenamk": [ "Neggio" ],
+"anz_r": [ 27 ],
+"id": [ "5206" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5208": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5208 ],
+"gdenamk": [ "Origlio" ],
+"anz_r": [ 59 ],
+"id": [ "5208" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5210": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5210 ],
+"gdenamk": [ "Paradiso" ],
+"anz_r": [ 1147 ],
+"id": [ "5210" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5212": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5212 ],
+"gdenamk": [ "Ponte Capriasca" ],
+"anz_r": [ 78 ],
+"id": [ "5212" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5213": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5213 ],
+"gdenamk": [ "Ponte Tresa" ],
+"anz_r": [ 61 ],
+"id": [ "5213" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5214": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5214 ],
+"gdenamk": [ "Porza" ],
+"anz_r": [ 76 ],
+"id": [ "5214" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5216": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5216 ],
+"gdenamk": [ "Pura" ],
+"anz_r": [ 75 ],
+"id": [ "5216" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5219": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5219 ],
+"gdenamk": [ "Rovio" ],
+"anz_r": [ 33 ],
+"id": [ "5219" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5221": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5221 ],
+"gdenamk": [ "Savosa" ],
+"anz_r": [ 77 ],
+"id": [ "5221" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5222": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5222 ],
+"gdenamk": [ "Sessa" ],
+"anz_r": [ 54 ],
+"id": [ "5222" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5225": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5225 ],
+"gdenamk": [ "Sorengo" ],
+"anz_r": [ 90 ],
+"id": [ "5225" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5226": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5226 ],
+"gdenamk": [ "Capriasca" ],
+"anz_r": [ 326 ],
+"id": [ "5226" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5227": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5227 ],
+"gdenamk": [ "Torricella-Taverne" ],
+"anz_r": [ 143 ],
+"id": [ "5227" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5231": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5231 ],
+"gdenamk": [ "Vezia" ],
+"anz_r": [ 59 ],
+"id": [ "5231" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5233": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5233 ],
+"gdenamk": [ "Vico Morcote" ],
+"anz_r": [ 36 ],
+"id": [ "5233" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5236": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5236 ],
+"gdenamk": [ "Collina d'Oro" ],
+"anz_r": [ 307 ],
+"id": [ "5236" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5237": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5237 ],
+"gdenamk": [ "Alto Malcantone" ],
+"anz_r": [ 69 ],
+"id": [ "5237" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5238": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5238 ],
+"gdenamk": [ "Monteceneri" ],
+"anz_r": [ 657 ],
+"id": [ "5238" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5242": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5242 ],
+"gdenamk": [ "Balerna" ],
+"anz_r": [ 160 ],
+"id": [ "5242" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5249": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5249 ],
+"gdenamk": [ "Castel San Pietro" ],
+"anz_r": [ 139 ],
+"id": [ "5249" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5250": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5250 ],
+"gdenamk": [ "Chiasso" ],
+"anz_r": [ 318 ],
+"id": [ "5250" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5251": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5251 ],
+"gdenamk": [ "Coldrerio" ],
+"anz_r": [ 151 ],
+"id": [ "5251" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5254": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5254 ],
+"gdenamk": [ "Mendrisio" ],
+"anz_r": [ 860 ],
+"id": [ "5254" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5257": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5257 ],
+"gdenamk": [ "Morbio Inferiore" ],
+"anz_r": [ 205 ],
+"id": [ "5257" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5260": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5260 ],
+"gdenamk": [ "Novazzano" ],
+"anz_r": [ 295 ],
+"id": [ "5260" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5263": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5263 ],
+"gdenamk": [ "Riva San Vitale" ],
+"anz_r": [ 139 ],
+"id": [ "5263" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5266": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5266 ],
+"gdenamk": [ "Stabio" ],
+"anz_r": [ 254 ],
+"id": [ "5266" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5268": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5268 ],
+"gdenamk": [ "Vacallo" ],
+"anz_r": [ 156 ],
+"id": [ "5268" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5269": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5269 ],
+"gdenamk": [ "Breggia" ],
+"anz_r": [ 221 ],
+"id": [ "5269" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5281": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5281 ],
+"gdenamk": [ "Biasca" ],
+"anz_r": [ 596 ],
+"id": [ "5281" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+},
+"5282": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5282 ],
+"gdenamk": [ "Claro" ],
+"anz_r": [ 266 ],
+"id": [ "5282" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5283": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5283 ],
+"gdenamk": [ "Cresciano" ],
+"anz_r": [ 38 ],
+"id": [ "5283" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5284": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5284 ],
+"gdenamk": [ "Iragna" ],
+"anz_r": [ 47 ],
+"id": [ "5284" ],
+"fillKey": [ "(36,57.7]" ] 
+},
+"5285": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5285 ],
+"gdenamk": [ "Lodrino" ],
+"anz_r": [ 114 ],
+"id": [ "5285" ],
+"fillKey": [ "(82,131]" ] 
+},
+"5286": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5286 ],
+"gdenamk": [ "Osogna" ],
+"anz_r": [ 63 ],
+"id": [ "5286" ],
+"fillKey": [ "(57.7,70]" ] 
+},
+"5304": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5304 ],
+"gdenamk": [ "Bosco/Gurin" ],
+"anz_r": [ 28 ],
+"id": [ "5304" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5307": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5307 ],
+"gdenamk": [ "Campo (Vallemaggia)" ],
+"anz_r": [ 34 ],
+"id": [ "5307" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5309": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5309 ],
+"gdenamk": [ "Cerentino" ],
+"anz_r": [ 18 ],
+"id": [ "5309" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5310": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5310 ],
+"gdenamk": [ "Cevio" ],
+"anz_r": [ 148 ],
+"id": [ "5310" ],
+"fillKey": [ "(131,168]" ] 
+},
+"5315": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5315 ],
+"gdenamk": [ "Linescio" ],
+"anz_r": [ 14 ],
+"id": [ "5315" ],
+"fillKey": [ "(4,36]" ] 
+},
+"5317": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5317 ],
+"gdenamk": [ "Maggia" ],
+"anz_r": [ 389 ],
+"id": [ "5317" ],
+"fillKey": [ "(259,412]" ] 
+},
+"5323": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5323 ],
+"gdenamk": [ "Lavizzara" ],
+"anz_r": [ 82 ],
+"id": [ "5323" ],
+"fillKey": [ "(70,82]" ] 
+},
+"5324": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5324 ],
+"gdenamk": [ "Avegno Gordevio" ],
+"anz_r": [ 233 ],
+"id": [ "5324" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5396": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5396 ],
+"gdenamk": [ "Terre di Pedemonte" ],
+"anz_r": [ 184 ],
+"id": [ "5396" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5397": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5397 ],
+"gdenamk": [ "Centovalli" ],
+"anz_r": [ 229 ],
+"id": [ "5397" ],
+"fillKey": [ "(168,259]" ] 
+},
+"5398": {
+ "ktkz": [ "ti" ],
+"gdenr": [ 5398 ],
+"gdenamk": [ "Gambarogno" ],
+"anz_r": [ 566 ],
+"id": [ "5398" ],
+"fillKey": [ "(412,1.58e+03]" ] 
+} 
+},
+"geographyConfig": {
+ "dataUrl": "topo/ti-municipalities.json",
+"highlightFillColor": "#E64366",
+"highlightBorderColor": "white",
+"borderColor": "lightgrey",
+"highlightBorderWidth":    1.5,
+"popupOnHover": true,
+"popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.gdenamk + ': ' + data.anz_r + '</div>';}  
+},
+"setProjection":  function( element, options ) {
+        var projection, path;
+        projection = d3.geo.albers()  
+        path = d3.geo.path().projection(null);
+        return {path: path, projection: projection};
+  } ,
+"done":  function(map) {map.svg.selectAll('.datamaps-subunit')
+                   .on('click', function(geography) {
+                   window.location = 'switzerland.html';});
+                   } ,
+"id": "chart470c6595633a" 
+}
+  chartParams.element = document.getElementById('chart470c6595633a')
+  
+  
+  var mapchart470c6595633a = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart470c6595633a.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart470c6595633a.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart470c6595633a.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>
