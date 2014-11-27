@@ -448,12 +448,18 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+	background-image: url(../images/park_headerbild.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 45px;
+	color: white;
+	text-shadow: 3px 3px 5px black;
+	margin-bottom: 30px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+	white-space: nowrap;
+/*    border-bottom: solid 1px #275da1;*/
 }
+
 
 header h1 {
   letter-spacing: -1px;
