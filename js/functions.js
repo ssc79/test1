@@ -3,7 +3,7 @@
 // ----------------------------------
 
 $(function(){
-  $("#includedContent").load("switzerland.html"); 
+  $("#mapSwitzerland").load("switzerland.html"); 
 });
       
 
