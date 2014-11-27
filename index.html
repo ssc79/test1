@@ -26,7 +26,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
  
-      <title>Einbruchskarte@Baloise</title>
+      <title>Einbruchskarte@Baloise.ch</title>
   </head>
 
   <body>
@@ -42,7 +42,6 @@
         <section id="main-content">
           <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Willkommen bei der Einbruchskarte Schweiz.</h3>
-
 
 <p>Die Einbruchskarte ist das Ergebnis detaillierter Analysen von vergangenen Einbruchsereignissen. Das heisst, sie zeigen auf, welche Gebiete besonders Einbruchgefährdet sind.</p>
 
@@ -65,8 +64,12 @@
 
 <p>Mit einem Klick auf den Kanton kann in die Region hineingezoomt werden.</p>
 
- <button type="submit" class="btn btn-default" onclick="getLocation()">Wo bin ich?</button>
-            
+<button type="submit" class="btn btn-default" onclick="getLocation()">Wo bin ich?</button>
+
+
+<div id="mapholder"></div>  <!--Div for map, see functions.js Section "Maps API related Functions"-->
+<div id="address"></div>    <!--Div for map footer, used to display Result of Google Geo Coding, see funtion showPosition()"-->
+<div id="content" class="container below-map"> <!--Div for content, used in different functions, e.g. for graphs"-->
 <div id="includedContent"></div>
 
             
