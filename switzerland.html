@@ -15,11 +15,14 @@
     
     <style>
     .rChart {
-      display: block;
+/*
+        display: block;
+
       margin-left: auto; 
       margin-right: auto;
-      width: 100%;
-      height: 100%;
+*/
+width: 960px;
+height: 500px;
     }  
     </style>
     
@@ -27,14 +30,13 @@
   <body >
     
     <div id = 'chart4ca850c17acc' class = 'rChart datamaps'></div>    
-    <script id='popup-template' type='text/x-handlebars-template'>
-    
-</script>
+    <script id='popup-template' type='text/x-handlebars-template'></script>
+
+
+<!--Mapping-->
 <script>
-  var chartParams = {
+    var chartParams = {
  "dom": "chart4ca850c17acc",
-"width": "100%",
-"height":   500,
 "scope": "cantons",
 "fills": {
  "(1,5.78]": "#F7FBFF",
@@ -43,9 +45,9 @@
 "(9,10]": "#9ECAE1",
 "(10,10.9]": "#6BAED6",
 "(10.9,12.7]": "#4292C6",
-"(12.7,13.4]": "#2171B5",
-"(13.4,15.2]": "#08519C",
-"(15.2,23]": "#08306B" 
+"(12.7,13.4]": "#fddbc7",
+"(13.4,15.2]": "#ef8a62",
+"(15.2,23]": "#b2182b" 
 },
 "legend": false,
 "labels": true,
@@ -84,7 +86,7 @@
 "anz_s": [      9 ],
 "einb_r": [      1 ],
 "id": [ "12" ],
-"fillKey": [ null ] 
+"fillKey": [ "(1,5.78]" ] 
 },
 "13": {
  "ktkz": [ "bl" ],
@@ -294,16 +296,15 @@
 "popupOnHover": true,
 "popupTemplate":  function(geography, data){return '<div class=hoverinfo>' + data.ktname + ': ' + data.einb_r + '</div>';}  
 },
-"setProjection":  function( element, options ) {
-        var projection, path;
-        projection = d3.geo.albers()  
-        path = d3.geo.path().projection(null);
-        return {path: path, projection: projection};
-  } ,
+"setProjection": function(element){
+    var projection = null
+    var path = d3.geo.path().projection(projection);
+    return {path: path, projection: projection};
+ },
 "done":  function(map) {map.svg.selectAll('.datamaps-subunit')
                    .on('click', function(geography) {
                    window.location = map.options.data[geography.id].ktkz+'.html';});
-                   } ,
+                   },
 "id": "chart4ca850c17acc" 
 }
   chartParams.element = document.getElementById('chart4ca850c17acc')
@@ -326,19 +327,7 @@
   if (chartParams.legend){
     mapchart4ca850c17acc.legend()
   }
-  
-  setProjection = function( element, options ) {
-    var projection, path;
- 
-      projection = d3.geo.albersUsa()
-        .scale(element.offsetWidth)
-        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
- 
-    path = d3.geo.path()
-      .projection( projection );
- 
-    return {path: path, projection: projection};
-  }
+
 </script>
 
 <style>
