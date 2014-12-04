@@ -22,13 +22,13 @@
   </head>
   <body >
     
-    <div id = 'chart22f42c164a22' class = 'rChart datamaps'></div>    
+    <div id = 'chart22f484b793c' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart22f42c164a22",
+ "dom": "chart22f484b793c",
 "width": "960px",
 "height": "500px",
 "scope": "cantons",
@@ -273,30 +273,32 @@
   } ,
 "done":  function(map) {map.svg.selectAll('.datamaps-subunit')
                    .on('click', function(geography) {
-                   var loc_var = map.options.data[geography.id].ktkz +'.html'
+                   var loc_var = map.options.data[geography.id].ktkz +'.html';
+                   var kant_id = map.options.data[geography.id].ktkz;
+                   localStorage.setItem('kant_id', kant_id)
                    window.location = loc_var.toLowerCase();});
                    } ,
-"id": "chart22f42c164a22" 
+"id": "chart22f484b793c" 
 }
-  chartParams.element = document.getElementById('chart22f42c164a22')
+  chartParams.element = document.getElementById('chart22f484b793c')
   
   
-  var mapchart22f42c164a22 = new Datamap(chartParams);
+  var mapchart22f484b793c = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart22f42c164a22.bubbles(bubbles)
+    mapchart22f484b793c.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart22f42c164a22.labels()
+    mapchart22f484b793c.labels()
   }
   
   if (chartParams.legend){
-    mapchart22f42c164a22.legend()
+    mapchart22f484b793c.legend()
   }
   
   setProjection = function( element, options ) {
