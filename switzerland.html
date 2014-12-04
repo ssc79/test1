@@ -22,13 +22,13 @@
   </head>
   <body >
     
-    <div id = 'chart150c47035566' class = 'rChart datamaps'></div>    
+    <div id = 'chart22f42c164a22' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart150c47035566",
+ "dom": "chart22f42c164a22",
 "width": "960px",
 "height": "500px",
 "scope": "cantons",
@@ -49,7 +49,7 @@
 "data": {
  "1": {
  "ktkz": [ "ZH" ],
-"ktname": [ "Z?rich" ],
+"ktname": [ "Zürich" ],
 "freq": [ 0.0054149 ],
 "id": [ "1" ],
 "freq_anz": [ "0.54%" ],
@@ -121,7 +121,7 @@
 },
 "18": {
  "ktkz": [ "GR" ],
-"ktname": [ "Graub?nden" ],
+"ktname": [ "Graubünden" ],
 "freq": [ 0.0046564 ],
 "id": [ "18" ],
 "freq_anz": [ "0.47%" ],
@@ -273,16 +273,44 @@
   } ,
 "done":  function(map) {map.svg.selectAll('.datamaps-subunit')
                    .on('click', function(geography) {
-                   window.location = map.options.data[geography.id].ktkz+'.html';});
+                   var loc_var = map.options.data[geography.id].ktkz +'.html'
+                   window.location = loc_var.toLowerCase();});
                    } ,
-"id": "chart150c47035566" 
+"id": "chart22f42c164a22" 
 }
-  chartParams.element = document.getElementById('chart150c47035566')
+  chartParams.element = document.getElementById('chart22f42c164a22')
   
   
-  var mapchart150c47035566 = new Datamap(chartParams);
+  var mapchart22f42c164a22 = new Datamap(chartParams);
   
-
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart22f42c164a22.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart22f42c164a22.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart22f42c164a22.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
 </script>
 
 <style>

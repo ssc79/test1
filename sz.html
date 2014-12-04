@@ -22,13 +22,13 @@
   </head>
   <body >
     
-    <div id = 'chart150c4f4f65f2' class = 'rChart datamaps'></div>    
+    <div id = 'chart22f4527a3509' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart150c4f4f65f2",
+ "dom": "chart22f4527a3509",
 "width": "960px",
 "height": "500px",
 "scope": "municipalities",
@@ -44,8 +44,8 @@
 "(0.02,0.0336]": "#084594",
 "(0.0336,99]": "#FF1493" 
 },
-"legend": true,
-"labels": true,
+"legend": false,
+"labels": false,
 "data": {
  "1": {
  "gdenr": [      1 ],
@@ -23562,27 +23562,27 @@
                     localStorage.setItem('geo_id', geo_id);
                     window.location = 'gemeinde_info.html';});
                    } ,
-"id": "chart150c4f4f65f2" 
+"id": "chart22f4527a3509" 
 }
-  chartParams.element = document.getElementById('chart150c4f4f65f2')
+  chartParams.element = document.getElementById('chart22f4527a3509')
   
   
-  var mapchart150c4f4f65f2 = new Datamap(chartParams);
+  var mapchart22f4527a3509 = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart150c4f4f65f2.bubbles(bubbles)
+    mapchart22f4527a3509.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart150c4f4f65f2.labels()
+    mapchart22f4527a3509.labels()
   }
   
   if (chartParams.legend){
-    mapchart150c4f4f65f2.legend()
+    mapchart22f4527a3509.legend()
   }
   
   setProjection = function( element, options ) {
