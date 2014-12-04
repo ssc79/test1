@@ -56,8 +56,17 @@
     <a href="switzerland.html"><img src="images/switzerland.jpg" height="42" width="42"></a>
     <a id=img_canton href="javascript:history.go(-1)"><img src="images/body-bg.jpg" height="42" width="42" onload="changeImage(img_canton);"></a>
     <h3>
-                    <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regionale Gefahrenstufen
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link" style="color:red">
+            Sie Wohnen in <script>document.write(geo_id)</script>.
+            </span></a>
+        
 </h3>
+        <p>
+
+                <span style="color:blue">
+    Im schönen Kanton <script>document.write(kant_id)</script>.
+        </span>
+    </p>
 
                 <p>Die Gefährdung wird in neun Gefahrenstufen dargestellt. Desto dunkler die Farbe, desto gefährdeter die Region. Konkret kann man somit über diese Abstufung auf die folgende Gefährdung schliessen: </p>
 
@@ -67,14 +76,7 @@
                     <li>hellblau: geringe Gefährdung</li>
                     <li>weiss: keine Daten</li>
                 </ul>
-    <p>
-        <span style="color:red">
-    Sie Wohnen in <script>document.write(geo_id)</script>.
-        </span>
-                <span style="color:blue">
-    Im schönen Kanton <script>document.write(kant_id)</script>.
-        </span>
-    </p>
+
 
    <p>
 
