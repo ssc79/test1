@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+	Design by Tim Hagmann // greenore.github.io
+	Source code: https://github.com/greenore/greenore.github.io
+	Reuse under MIT License (http://www.opensource.org/licenses/mit-license.php)
+-->
+
+<html>
+
+<head>
+    
+    <!-- jQuery -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'></script>
+    <!-- Google Maps API -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBXV2laAbwwQ1V4tPwb6oa7hxohNTUBa2o&sensor=true"></script>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Individual functions -->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+    <!-- Individual CSS Sheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/individual.css" media="screen">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+        var geo_id = localStorage.getItem("geo_id");
+    </script>
+    
+    
+</head>
+
+    
+    
+<body>
+    <a href="switzerland.html"><img src="images/switzerland.jpg" height="42" width="42"></a>
+    <a href="javascript:history.go(-1)"> <img src="images/solothurn.jpg" height="42" width="42"></a>
+    <h3>1
+                    <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regionale Gefahrenstufen
+</h3>
+
+                <p>Die Gefährdung wird in neun Gefahrenstufen dargestellt. Desto dunkler die Farbe, desto gefährdeter die Region. Konkret kann man somit über diese Abstufung auf die folgende Gefährdung schliessen: </p>
+
+                <ul>
+                    <li>dunkelblau: erhebliche Gefährdung</li>
+                    <li>blau: mittlere Gefährdung </li>
+                    <li>hellblau: geringe Gefährdung</li>
+                    <li>weiss: keine Daten</li>
+                </ul>
+    <p>
+        <span style="color:red">
+    Sie Wohnen in <script>document.write(geo_id)</script>.
+        </span>
+    </p>
+
+</body>
+
+</html>
+
