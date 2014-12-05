@@ -19,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart2f2843bc2634' class = 'rChart datamaps'></div>    
+    <div id = 'chart2f2857863748' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart2f2843bc2634",
+ "dom": "chart2f2857863748",
 "width": "960px",
 "height": "500px",
 "scope": "municipalities",
@@ -23554,32 +23554,34 @@
   } ,
 "done":  function(map) {map.svg.selectAll('.datamaps-subunit')
                    .on('click', function(geography) {
-                    var geo_id = map.options.data[geography.id].gdenamk;
-                    var link_to = map.options.data[geography.id].gdenamk
-                    localStorage.setItem('geo_id', geo_id);
+                    var var_gdenamk = map.options.data[geography.id].gdenamk;
+                    var var_gde_freq_anz = map.options.data[geography.id].freq_anz;
+                    var link_to = map.options.data[geography.id].gdenamk;
+                    localStorage.setItem('var_gde_freq_anz', var_gde_freq_anz);
+                    localStorage.setItem('var_gdenamk', var_gdenamk);
                     window.location = 'gemeinde_info.html';});
                    } ,
-"id": "chart2f2843bc2634" 
+"id": "chart2f2857863748" 
 }
-  chartParams.element = document.getElementById('chart2f2843bc2634')
+  chartParams.element = document.getElementById('chart2f2857863748')
   
   
-  var mapchart2f2843bc2634 = new Datamap(chartParams);
+  var mapchart2f2857863748 = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart2f2843bc2634.bubbles(bubbles)
+    mapchart2f2857863748.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart2f2843bc2634.labels()
+    mapchart2f2857863748.labels()
   }
   
   if (chartParams.legend){
-    mapchart2f2843bc2634.legend()
+    mapchart2f2857863748.legend()
   }
   
   setProjection = function( element, options ) {

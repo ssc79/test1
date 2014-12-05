@@ -17,9 +17,16 @@
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
+        
+    
+    <!-- Highcharts -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://code.highcharts.com/modules/solid-gauge.js"></script>
+    
     <!-- Individual functions -->
     <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/gauge.js"></script>
 
     <!-- Individual CSS Sheets -->
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -31,57 +38,59 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script type="text/javascript">
-        var geo_id = localStorage.getItem("geo_id");
-        var kant_id = localStorage.getItem("kant_id").toLowerCase();
-    </script>
+    <style>
+    .cant_img {
+    }  
+    </style>
     
 
+    
     <script type="text/javascript">
+        // Variablen aus dem lokalen speicher importieren
+        var var_gdenamk = localStorage.getItem("var_gdenamk");
+        var var_ktkz = localStorage.getItem("var_ktkz").toLowerCase();
+        var var_ktname = localStorage.getItem("var_ktname");
+        var var_gde_freq_anz = localStorage.getItem("var_gde_freq_anz");
+        var var_kant_freq_anz = localStorage.getItem("var_kant_freq_anz");
+        
+        // Prozent Zeichen empfernen und runden
+        var_gde_freq_anz = Math.round(Number(var_gde_freq_anz.substring(0, var_gde_freq_anz.length - 1)) * 10);
+        var_kant_freq_anz = Math.round(Number(var_kant_freq_anz.substring(0, var_kant_freq_anz.length - 1)) * 10);
+    </script>
+
+    <script type="text/javascript">
+        // Kantonsbilder dynamisch anpassen
         function changeImage(element)
         {
           var x = element.getElementsByTagName("img").item(0);
           var v = x.getAttribute("src");
-          if(v == "")
-            v = "images/" + kant_id + ".jpg";
-          else
-            v = "images/" + kant_id + ".jpg";
-          x.setAttribute("src", v);	
+          v = "images/" + var_ktkz + ".jpg";
+          x.setAttribute("src", v);
         }
     </script>
 
 </head>
 
 <body>
-    <a href="switzerland.html"><img src="images/switzerland.jpg" height="42" width="42"></a>
-    <a id=img_canton href="javascript:history.go(-1)"><img src="images/body-bg.jpg" height="42" width="42" onload="changeImage(img_canton);"></a>
+    <a href="switzerland.html" class="cant_img"><img src="images/switzerland.jpg" height="42" width="42"></a>
+    <a id=img_canton href="javascript:history.go(-1)" class="cant_img"><img src="images/body-bg.jpg" height="42" width="42" onload="changeImage(img_canton);"></a>
+    
     <h3>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link" style="color:red">
-            Sie Wohnen in <script>document.write(geo_id)</script>.
-            </span></a>
-        
-</h3>
-        <p>
+        <p id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link" style="color:red">
+            Sie Wohnen in <script>document.write(var_gdenamk)</script>.
+            </span></p>
+    </h3>
 
-                <span style="color:blue">
-    Im schönen Kanton <script>document.write(kant_id)</script>.
-        </span>
-    </p>
+    <p><span style="color:blue">Im schönen Kanton <script>document.write(var_ktname)</script>.</span></p>
 
-                <p>Die Gefährdung wird in neun Gefahrenstufen dargestellt. Desto dunkler die Farbe, desto gefährdeter die Region. Konkret kann man somit über diese Abstufung auf die folgende Gefährdung schliessen: </p>
+    <div style="width: 1000px; height: 250px; margin:0">
+	<div id="container-gemeinde" style="width: 300px; height: 250px; float: left;"></div>
+	<div id="container-kanton" style="width: 300px; height: 250px; float: left;"></div>
+	<div id="container-schweiz" style="width: 300px; height: 250px; float: left"></div>
 
-                <ul>
-                    <li>dunkelblau: erhebliche Gefährdung</li>
-                    <li>blau: mittlere Gefährdung </li>
-                    <li>hellblau: geringe Gefährdung</li>
-                    <li>weiss: keine Daten</li>
-                </ul>
+    </div>
 
-
-   <p>
-
-    </p>
-
+    
 </body>
 
 </html>

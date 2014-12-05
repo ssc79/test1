@@ -81,3 +81,52 @@ function showError(error)
 	  break;
 	}
   }
+
+
+// ----------------------------------
+// Graph Functions
+// ----------------------------------
+
+function pie_chart(index, json, fields, title, outputid) {
+    content=document.getElementById('content');
+    data = [];
+    for (var i=0 ; i < fields.length ; i++)
+                        {
+                            data = data.concat([[fields[i],Number(json[fields[i]][index])]]);
+                        }
+
+    content.innerHTML = "hallo";
+    content.innerHTML = data;
+    
+    $(content).highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: title
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: title,
+            data: data
+        }]
+    });
+}

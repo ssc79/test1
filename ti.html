@@ -19,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart2f28786d639c' class = 'rChart datamaps'></div>    
+    <div id = 'chart2f283ad66d7' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart2f28786d639c",
+ "dom": "chart2f283ad66d7",
 "width": "960px",
 "height": "500px",
 "scope": "municipalities",
@@ -23554,32 +23554,34 @@
   } ,
 "done":  function(map) {map.svg.selectAll('.datamaps-subunit')
                    .on('click', function(geography) {
-                    var geo_id = map.options.data[geography.id].gdenamk;
-                    var link_to = map.options.data[geography.id].gdenamk
-                    localStorage.setItem('geo_id', geo_id);
+                    var var_gdenamk = map.options.data[geography.id].gdenamk;
+                    var var_gde_freq_anz = map.options.data[geography.id].freq_anz;
+                    var link_to = map.options.data[geography.id].gdenamk;
+                    localStorage.setItem('var_gde_freq_anz', var_gde_freq_anz);
+                    localStorage.setItem('var_gdenamk', var_gdenamk);
                     window.location = 'gemeinde_info.html';});
                    } ,
-"id": "chart2f28786d639c" 
+"id": "chart2f283ad66d7" 
 }
-  chartParams.element = document.getElementById('chart2f28786d639c')
+  chartParams.element = document.getElementById('chart2f283ad66d7')
   
   
-  var mapchart2f28786d639c = new Datamap(chartParams);
+  var mapchart2f283ad66d7 = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart2f28786d639c.bubbles(bubbles)
+    mapchart2f283ad66d7.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart2f28786d639c.labels()
+    mapchart2f283ad66d7.labels()
   }
   
   if (chartParams.legend){
-    mapchart2f28786d639c.legend()
+    mapchart2f283ad66d7.legend()
   }
   
   setProjection = function( element, options ) {

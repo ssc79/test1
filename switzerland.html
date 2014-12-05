@@ -19,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart2f28394c59ab' class = 'rChart datamaps'></div>    
+    <div id = 'chart2f287695158' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart2f28394c59ab",
+ "dom": "chart2f287695158",
 "width": "960px",
 "height": "500px",
 "scope": "cantons",
@@ -271,31 +271,35 @@
 "done":  function(map) {map.svg.selectAll('.datamaps-subunit')
                    .on('click', function(geography) {
                    var loc_var = map.options.data[geography.id].ktkz +'.html';
-                   var kant_id = map.options.data[geography.id].ktkz;
-                   localStorage.setItem('kant_id', kant_id)
+                   var var_ktkz = map.options.data[geography.id].ktkz;
+                   var var_ktname = map.options.data[geography.id].ktname;
+                   var var_kant_freq_anz = map.options.data[geography.id].freq_anz;
+                   localStorage.setItem('var_ktkz', var_ktkz)
+                   localStorage.setItem('var_ktname', var_ktname)
+                   localStorage.setItem('var_kant_freq_anz', var_kant_freq_anz)
                    window.location = loc_var.toLowerCase();});
                    } ,
-"id": "chart2f28394c59ab" 
+"id": "chart2f287695158" 
 }
-  chartParams.element = document.getElementById('chart2f28394c59ab')
+  chartParams.element = document.getElementById('chart2f287695158')
   
   
-  var mapchart2f28394c59ab = new Datamap(chartParams);
+  var mapchart2f287695158 = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart2f28394c59ab.bubbles(bubbles)
+    mapchart2f287695158.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart2f28394c59ab.labels()
+    mapchart2f287695158.labels()
   }
   
   if (chartParams.legend){
-    mapchart2f28394c59ab.legend()
+    mapchart2f287695158.legend()
   }
   
   setProjection = function( element, options ) {
