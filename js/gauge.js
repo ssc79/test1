@@ -7,7 +7,7 @@ $(function () {
         },
 
         title: null,
-
+        
         pane: {
             center: ['50%', '85%'],
             size: '120%',
@@ -36,10 +36,12 @@ $(function () {
             ],
             lineWidth: 0,
             minorTickInterval: null,
-            tickPixelInterval: 1000,
+            tickPixelInterval: 400,
             tickWidth: 0,
+            showFirstLabel: false,
+            showLastLabel: false,
             title: {
-                y: -80
+                y: -85
             },
             labels: {
                 y: 16
@@ -64,7 +66,8 @@ $(function () {
     $('#container-gemeinde').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             title: {
-                text: var_gdenamk
+                text: var_gdenamk,
+                style: { "fontSize": "28px" }
             }
         },
         
@@ -85,7 +88,8 @@ $(function () {
     $('#container-kanton').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             title: {
-                text: var_ktname
+                text: "Kt." + var_ktname,
+                style: { "fontSize": "28px" }
             }
         },
         series: [{
@@ -105,7 +109,8 @@ $(function () {
     $('#container-schweiz').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             title: {
-                text: "Schweiz"
+                text: "Schweiz",
+                style: { "fontSize": "28px" }
             }
         },
         series: [{
