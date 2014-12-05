@@ -19,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart2f281d76796b' class = 'rChart datamaps'></div>    
+    <div id = 'chart2f28394c59ab' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart2f281d76796b",
+ "dom": "chart2f28394c59ab",
 "width": "960px",
 "height": "500px",
 "scope": "cantons",
@@ -46,7 +46,7 @@
 "data": {
  "1": {
  "ktkz": [ "ZH" ],
-"ktname": [ "Zürich" ],
+"ktname": [ "ZÃ¼rich" ],
 "freq": [ 0.0054149 ],
 "id": [ "1" ],
 "freq_anz": [ "0.54%" ],
@@ -118,7 +118,7 @@
 },
 "18": {
  "ktkz": [ "GR" ],
-"ktname": [ "Graubünden" ],
+"ktname": [ "GraubÃ¼nden" ],
 "freq": [ 0.0046564 ],
 "id": [ "18" ],
 "freq_anz": [ "0.47%" ],
@@ -275,27 +275,27 @@
                    localStorage.setItem('kant_id', kant_id)
                    window.location = loc_var.toLowerCase();});
                    } ,
-"id": "chart2f281d76796b" 
+"id": "chart2f28394c59ab" 
 }
-  chartParams.element = document.getElementById('chart2f281d76796b')
+  chartParams.element = document.getElementById('chart2f28394c59ab')
   
   
-  var mapchart2f281d76796b = new Datamap(chartParams);
+  var mapchart2f28394c59ab = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart2f281d76796b.bubbles(bubbles)
+    mapchart2f28394c59ab.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart2f281d76796b.labels()
+    mapchart2f28394c59ab.labels()
   }
   
   if (chartParams.legend){
-    mapchart2f281d76796b.legend()
+    mapchart2f28394c59ab.legend()
   }
   
   setProjection = function( element, options ) {
