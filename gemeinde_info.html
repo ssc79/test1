@@ -76,17 +76,17 @@
     <a id=img_canton href="javascript:history.go(-1)" class="cant_img"><img src="images/body-bg.jpg" height="42" width="42" onload="changeImage(img_canton);"></a>
     
     <h3>
-        <p id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link" style="color:red">
-            Sie Wohnen in <script>document.write(var_gdenamk)</script>.
+        <p id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link">
+            Sie Interessieren sich für die Gemeinde <script>document.write(var_gdenamk)</script> im schönen Kanton <script>document.write(var_ktname)</script>. Wie Sie der unteren Grafik entnehmen können verzeichnet die Gemeinde im Schnitt <script>document.write(var_gde_freq_anz)</script> Einbrüche pro 1'000 Einwohner.
             </span></p>
     </h3>
 
-    <p><span style="color:blue">Im schönen Kanton <script>document.write(var_ktname)</script>.</span></p>
+    <p><span style="color:blue"></span></p>
 
-    <div style="width: 1000px; height: 250px; margin:0">
-	<div id="container-gemeinde" style="width: 300px; height: 250px; float: left;"></div>
-	<div id="container-kanton" style="width: 300px; height: 250px; float: left;"></div>
-	<div id="container-schweiz" style="width: 300px; height: 250px; float: left"></div>
+    <div style="width: 1000px; height: 250px; margin:0; position: fixed; bottom: 0;">
+	<a href="javascript:history.go(-1)"><div id="container-gemeinde" style="width: 300px; height: 250px; float: left;"></div></a>
+	<a href="javascript:history.go(-1)"><div id="container-kanton" style="width: 300px; height: 250px; float: left;"></div></a>
+	<a href="switzerland.html"><div id="container-schweiz" style="width: 300px; height: 250px; float: left"></div></a>
 
     </div>
 
