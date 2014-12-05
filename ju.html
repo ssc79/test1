@@ -1,5 +1,5 @@
 <!doctype HTML>
-<meta charset = 'utf-8'>
+<meta charset = 'ISO-8859-1'>
 <html>
   <head>
     
@@ -11,9 +11,6 @@
     
     <style>
     .rChart {
-      display: block;
-      margin-left: auto; 
-      margin-right: auto;
       width: 960pxpx;
       height: 500pxpx;
     }  
@@ -22,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart22f431e35459' class = 'rChart datamaps'></div>    
+    <div id = 'chart2f281f201936' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart22f431e35459",
+ "dom": "chart2f281f201936",
 "width": "960px",
 "height": "500px",
 "scope": "municipalities",
@@ -23562,27 +23559,27 @@
                     localStorage.setItem('geo_id', geo_id);
                     window.location = 'gemeinde_info.html';});
                    } ,
-"id": "chart22f431e35459" 
+"id": "chart2f281f201936" 
 }
-  chartParams.element = document.getElementById('chart22f431e35459')
+  chartParams.element = document.getElementById('chart2f281f201936')
   
   
-  var mapchart22f431e35459 = new Datamap(chartParams);
+  var mapchart2f281f201936 = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart22f431e35459.bubbles(bubbles)
+    mapchart2f281f201936.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart22f431e35459.labels()
+    mapchart2f281f201936.labels()
   }
   
   if (chartParams.legend){
-    mapchart22f431e35459.legend()
+    mapchart2f281f201936.legend()
   }
   
   setProjection = function( element, options ) {

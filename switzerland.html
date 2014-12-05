@@ -1,5 +1,5 @@
 <!doctype HTML>
-<meta charset = 'utf-8'>
+<meta charset = 'ISO-8859-1'>
 <html>
   <head>
     
@@ -11,9 +11,6 @@
     
     <style>
     .rChart {
-      display: block;
-      margin-left: auto; 
-      margin-right: auto;
       width: 960pxpx;
       height: 500pxpx;
     }  
@@ -22,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart22f484b793c' class = 'rChart datamaps'></div>    
+    <div id = 'chart2f281d76796b' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart22f484b793c",
+ "dom": "chart2f281d76796b",
 "width": "960px",
 "height": "500px",
 "scope": "cantons",
@@ -278,27 +275,27 @@
                    localStorage.setItem('kant_id', kant_id)
                    window.location = loc_var.toLowerCase();});
                    } ,
-"id": "chart22f484b793c" 
+"id": "chart2f281d76796b" 
 }
-  chartParams.element = document.getElementById('chart22f484b793c')
+  chartParams.element = document.getElementById('chart2f281d76796b')
   
   
-  var mapchart22f484b793c = new Datamap(chartParams);
+  var mapchart2f281d76796b = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart22f484b793c.bubbles(bubbles)
+    mapchart2f281d76796b.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart22f484b793c.labels()
+    mapchart2f281d76796b.labels()
   }
   
   if (chartParams.legend){
-    mapchart22f484b793c.legend()
+    mapchart2f281d76796b.legend()
   }
   
   setProjection = function( element, options ) {
