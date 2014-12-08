@@ -115,7 +115,7 @@ $(function () {
         },
         series: [{
             name: "Schweiz",
-            data: [9],
+            data: [var_swiss_freq_anz],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                 ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
