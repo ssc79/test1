@@ -38,8 +38,8 @@ $(function () {
             minorTickInterval: null,
             tickPixelInterval: 400,
             tickWidth: 0,
-            showFirstLabel: false,
-            showLastLabel: false,
+            showFirstLabel: true,
+            showLastLabel: true,
             title: {
                 y: -85
             },
