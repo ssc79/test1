@@ -88,7 +88,7 @@ $(function () {
     $('#container-kanton').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             title: {
-                text: "Kt." + var_ktname,
+                text: "Kt. " + var_ktname,
                 style: { "fontSize": "28px" }
             }
         },
