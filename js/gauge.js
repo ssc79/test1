@@ -75,7 +75,7 @@ $(function () {
             name: var_gdenamk,
             data: [var_gde_freq_anz],
             dataLabels: {
-                format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+                format: '<div style="text-align:center"><span style="font-size:26px;color:' +
                 ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
                 '<span style="font-size:12px;color:silver"' + 
                 '><span>Einbrüche pro<br/>' + ' 1' + "'" + '000 Einwohner</span></span></div>'
@@ -96,7 +96,7 @@ $(function () {
             name: var_ktname,
             data: [var_kant_freq_anz],
             dataLabels: {
-                format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+                format: '<div style="text-align:center"><span style="font-size:26px;color:' +
                 ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
                 '<span style="font-size:12px;color:silver"' + 
                 '><span>Einbrüche pro<br/>' + ' 1' + "'" + '000 Einwohner</span></span></div>'
@@ -117,7 +117,7 @@ $(function () {
             name: "Schweiz",
             data: [var_swiss_freq_anz],
             dataLabels: {
-                format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+                format: '<div style="text-align:center"><span style="font-size:26px;color:' +
                 ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
                 '<span style="font-size:12px;color:silver"' + 
                 '><span>Einbrüche pro<br/>' + ' 1' + "'" + '000 Einwohner</span></span></div>'
