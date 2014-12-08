@@ -19,13 +19,13 @@
   </head>
   <body >
     
-    <div id = 'chart27c8946d12' class = 'rChart datamaps'></div>    
+    <div id = 'chart1c6870cc5a5a' class = 'rChart datamaps'></div>    
     <script id='popup-template' type='text/x-handlebars-template'>
     
 </script>
 <script>
   var chartParams = {
- "dom": "chart27c8946d12",
+ "dom": "chart1c6870cc5a5a",
 "width": "960px",
 "height": "500px",
 "scope": "municipalities",
@@ -159,27 +159,27 @@
                     localStorage.setItem('var_gdenamk', var_gdenamk);
                     window.location = 'gemeinde_info.html';});
                    } ,
-"id": "chart27c8946d12" 
+"id": "chart1c6870cc5a5a" 
 }
-  chartParams.element = document.getElementById('chart27c8946d12')
+  chartParams.element = document.getElementById('chart1c6870cc5a5a')
   
   
-  var mapchart27c8946d12 = new Datamap(chartParams);
+  var mapchart1c6870cc5a5a = new Datamap(chartParams);
   
   
     
   // draw a bubble map if specified
   if (chartParams.bubbles) {
     var bubbles = chartParams.bubbles
-    mapchart27c8946d12.bubbles(bubbles)
+    mapchart1c6870cc5a5a.bubbles(bubbles)
   }
   
   if (chartParams.labels){
-    mapchart27c8946d12.labels()
+    mapchart1c6870cc5a5a.labels()
   }
   
   if (chartParams.legend){
-    mapchart27c8946d12.legend()
+    mapchart1c6870cc5a5a.legend()
   }
   
   setProjection = function( element, options ) {
