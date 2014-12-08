@@ -133,13 +133,7 @@ $(function () {
 // Backgroundcolor
 Highcharts.theme = {
    chart: {
-      backgroundColor: {
-         linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-         stops: [
-            [0, 'transparent'],
-            [1, 'transparent']
-         ]
-      }
+      backgroundColor: null
    }
 };
 
