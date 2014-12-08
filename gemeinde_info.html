@@ -54,8 +54,11 @@
         var var_kant_freq_anz = localStorage.getItem("var_kant_freq_anz");
         
         // Prozent Zeichen empfernen und runden
-        var_gde_freq_anz = Math.round(Number(var_gde_freq_anz.substring(0, var_gde_freq_anz.length - 1)) * 10);
-        var_kant_freq_anz = Math.round(Number(var_kant_freq_anz.substring(0, var_kant_freq_anz.length - 1)) * 10);
+        // var_gde_freq_anz = Math.round(Number(var_gde_freq_anz.substring(0, var_gde_freq_anz.length - 1)) * 10);
+        // var_kant_freq_anz = Math.round(Number(var_kant_freq_anz.substring(0, var_kant_freq_anz.length - 1)) * 10);
+        var_gde_freq_anz = Number(var_gde_freq_anz);
+        var_kant_freq_anz = Number(var_kant_freq_anz);
+        
     </script>
 
     <script type="text/javascript">
